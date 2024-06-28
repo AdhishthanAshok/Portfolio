@@ -59,12 +59,12 @@ const Theme = () => {
   }, [darkMode]);
 
   return (
-    <div className="absolute top-1 right-3" ref={ref}>
+    <div className=" rounded-lg text-sm px-4 py-2 text-" ref={ref}>
       <button
         onClick={toggleDarkMode}
         className={`bg-${darkMode ? "gray-800" : "white"} text-${
-          darkMode ? "white" : "gray-800"
-        } dark:bg-${darkMode ? "white" : "gray-800"} dark:text-${
+          darkMode ? "" : "gray-800"
+        } dark:bg-${darkMode ? "" : "gray-800"} dark:text-${
           darkMode ? "gray-800" : "white"
         } font-bold py-2 px-4 rounded-lg hover:bg-${
           darkMode ? "gray-700" : "gray-200"

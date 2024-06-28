@@ -10,8 +10,8 @@ import Theme from "./components/Theme.jsx";
 function App() {
   return (
     <Router>
-      <div className="App pt-3 dark:bg-gray-900 transition-colors duration-300">
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 mb-4">
+      <div className="App dark:bg-gray-900 transition-colors duration-300">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link
               to="/"

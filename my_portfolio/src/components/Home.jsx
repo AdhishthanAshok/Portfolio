@@ -6,7 +6,7 @@ import leetcode_image from "../assets/LC.png";
 const Home = () => {
   return (
     <div className="smooth-scroll flex flex-col items-center">
-      <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div className="px-0 mx-0 min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl p-5 md:p-10">
           <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white inline-block">
@@ -41,13 +41,240 @@ const Home = () => {
             />
           </div>
         </div>
+        <div className="group flex space-x-16 overflow-hidden">
+          <div className="group-hover:paused flex animate-loop-scroll space-x-16">
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 1"
+            />
+
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 2"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=9Gfx4Dfxl0JK&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 3"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 4"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 5"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 6"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 7"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 8"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 9"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 10"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 11"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=23045&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 12"
+            />
+          </div>
+          <div className="group-hover:paused flex animate-loop-scroll space-x-16">
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 1"
+            />
+
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 2"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=9Gfx4Dfxl0JK&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 3"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 4"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 5"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 6"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 7"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 8"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 9"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 10"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 11"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=23045&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 12"
+            />
+          </div>
+          <div className="group-hover:paused flex animate-loop-scroll space-x-16">
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 1"
+            />
+
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 2"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=9Gfx4Dfxl0JK&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 3"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 4"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 5"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 6"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 7"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 8"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 9"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 10"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 11"
+            />
+            <img
+              loading="lazy"
+              src="https://img.icons8.com/?size=100&id=23045&format=png&color=000000"
+              className="max-w-none w-16"
+              alt="Image 12"
+            />
+          </div>
+        </div>
         <div className="flex flex-col justify-center items-center w-full">
           <h1 className="text-3xl font-bold text-center py-8 dark:text-white">
-            Days, I code
+            Days I Code
           </h1>
-          <div className="w-full max-w-md md:max-w-4xl ">
+          <div className="w-full max-w-md md:max-w-4xl">
             <img
-              className="h-auto w-full mx-auto transition-all duration-500 rounded-lg blur-sm hover:blur-none"
+              className="object-cover object-center mb-10 h-80 md:h-auto w-full mx-auto transition-all duration-500 rounded-lg blur-sm hover:blur-none"
               src={leetcode_image}
               alt="Leetcode activity"
             />
