@@ -12,7 +12,7 @@ import AboutMe from "./components/AboutMe";
 import Resume from "./components/Resume";
 import ContactMe from "./components/ContactMe";
 import Theme from "./components/Theme.jsx";
-import header_logo from "./assets/AA.webp";
+import header_logo from "./assets/AA_New.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App  dark:bg-gray-900 transition-colors duration-300">
+      <div className="App  dark:bg-gray-900 transition-colors duration-300 bg-gray-50">
         <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link
@@ -33,7 +33,7 @@ function App() {
               <img
                 src={header_logo}
                 className="h-8 dark:bg-gray"
-                alt="Flowbite Logo"
+                alt="Adhishthan Logo"
               />
             </Link>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -70,9 +70,8 @@ function App() {
               <ul className="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <NavLink
-                    exact
                     to="/"
-                    activeClassName="bg-blue-700 text-white"
+                    activeclassname="bg-blue-700 text-white"
                     className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Home
@@ -81,25 +80,25 @@ function App() {
                 <li>
                   <NavLink
                     to="/projects"
-                    activeClassName="bg-blue-700 text-white"
+                    activeclassname="bg-blue-700 text-white"
                     className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Projects
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/about-me"
-                    activeClassName="bg-blue-700 text-white"
+                    activeclassname="bg-blue-700 text-white"
                     className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     About Me
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     to="/resume"
-                    activeClassName="bg-blue-700 text-white"
+                    activeclassname="bg-blue-700 text-white"
                     className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Resume
@@ -108,7 +107,7 @@ function App() {
                 <li>
                   <NavLink
                     to="/contact-me"
-                    activeClassName="bg-blue-700 text-white"
+                    activeclassname="bg-blue-700 text-white"
                     className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Contact Me

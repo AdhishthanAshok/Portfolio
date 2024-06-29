@@ -1,10 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const Popup = ({ message, onClose }) => (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="bg-white p-6 rounded shadow-lg">
+      <p>{message}</p>
+      <button
+        onClick={onClose}
+        className="mt-4 px-4 py-2 bg-gray-800 text-white rounded "
+      >
+        Close
+      </button>
+    </div>
+  </div>
+);
 
 const ContactMe = () => {
+  const form = useRef();
+  const [popupMessage, setPopupMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setPopupMessage("Message sent successfully!");
+        },
+        (error) => {
+          setPopupMessage(`Failed to send message: ${error.text}`);
+        }
+      );
+  };
+
+  const closePopup = () => {
+    setPopupMessage("");
+  };
+
   return (
-    <div className="container my-24 mx-auto md:px-6">
-      <section className="">
+    <div className="container my-24 mx-auto md:px-6 bg-gray-50 dark:bg-gray-900">
+      {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
+      <section>
         <div className="container md:px-12">
           <div className="block rounded-lg bg-gray-50 px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
             <div className="flex flex-row justify-center mb-10">
@@ -88,11 +130,11 @@ const ContactMe = () => {
               </div>
             </div>
             <div className="mx-auto max-w-[700px]">
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                   <div>
                     <label
-                      for="first_name"
+                      htmlFor="first_name"
                       className="inline mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       First name
@@ -101,12 +143,13 @@ const ContactMe = () => {
                       type="text"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="John"
+                      name="user_name"
                       required
                     />
                   </div>
                   <div>
                     <label
-                      for="last_name"
+                      htmlFor="last_name"
                       className="inline mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Last name
@@ -120,7 +163,7 @@ const ContactMe = () => {
                   </div>
                 </div>
                 <label
-                  for="input-group-1"
+                  htmlFor="input-group-1"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Your Email
@@ -143,12 +186,13 @@ const ContactMe = () => {
                     id="input-group-1"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="name@flowbite.com"
+                    name="user_email"
                   />
                 </div>
                 <div className="relative mb-6" data-te-input-wrapper-init>
                   <label
-                    for="message"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    htmlFor="message"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Your message
                   </label>
@@ -157,15 +201,15 @@ const ContactMe = () => {
                     rows="4"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Write your thoughts here..."
+                    name="message"
                   ></textarea>
                 </div>
                 <div className="mb-6 flex items-center justify-center">
-                  <button
-                    type="button"
-                    class="text-gray-800 hover:text-white border border-gray-800 hover:bg-gray-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black dark:focus:ring-white"
-                  >
-                    Send
-                  </button>
+                  <input
+                    type="submit"
+                    value="Send"
+                    className="text-gray-800 hover:text-white border border-gray-800 hover:bg-gray-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black dark:focus:ring-white"
+                  />
                 </div>
               </form>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-r dark:bg-gray-900 transition-colors duration-300 bg-gray-50 dark:bg-gray-900">
       <h2 className="text-4xl font-bold bg-gray-50 text-black pb-8 text-center  dark:text-white transition-colors duration-300">
         Projects
       </h2>
