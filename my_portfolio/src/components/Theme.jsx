@@ -70,7 +70,7 @@ const Theme = () => {
         } dark:bg-${darkMode ? "" : "gray-900"} dark:text-${
           darkMode ? "gray-900" : "br-gray-50"
         } font-bold py-2 px-4 rounded-lg hover:bg-${
-          darkMode ? "gray-700" : "gray-200"
+          darkMode ? "gray-900" : "gray-200"
         } dark:hover:bg-${
           darkMode ? "gray-200" : "gray-700"
         } transition duration-700`}
