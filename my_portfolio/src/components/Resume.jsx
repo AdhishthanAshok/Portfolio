@@ -4,12 +4,12 @@ import resume from "../assets/resume.pdf";
 
 const Resume = () => {
   return (
-    <div className="h-screen bg-gradient-to-r text-center bg-gray-50 dark:bg-gray-900">
-      <h2 className="text-4xl font-bold text-black  dark:text-white mb-8">
+    <div className="h-[calc(100vh-9rem)] bg-gradient-to-r text-center bg-gray-50 dark:bg-gray-900">
+      {/* <h2 className="text-4xl font-bold text-black  dark:text-white mb-8">
         Resume
-      </h2>
+      </h2> */}
       <p className="text-black dark:text-white mb-4">
-        Click here to Download it.
+        Click here to Download <span className="font-bold ">Resume</span>.
       </p>
       <a
         href={resume}

@@ -13,6 +13,7 @@ import Resume from "./components/Resume";
 import ContactMe from "./components/ContactMe";
 import Theme from "./components/Theme.jsx";
 import header_logo from "./assets/AA_New.png";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -124,6 +125,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
