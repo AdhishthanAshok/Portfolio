@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Adhishthan_Ashok_Resume.pdf";
 
 const Resume = () => {
   return (
@@ -13,7 +13,7 @@ const Resume = () => {
       </p>
       <a
         href={resume}
-        download="resume.pdf"
+        download="Adhishthan_Ashok_Resume.pdf"
         className="mt-8 bg-black dark:bg-gray-100 dark:text-black hover:px-5 hover:py-2 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-black active:border-collapse transition-all duration-300"
       >
         Download Resume
