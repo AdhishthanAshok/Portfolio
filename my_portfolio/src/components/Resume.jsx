@@ -1,10 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import Theme from "./Theme.jsx";
 import resume from "../assets/Adhishthan_Ashok_Resume.pdf";
 
 const Resume = () => {
+  const [darkMode, setDarkMode] = useState(false);
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
   return (
-    <div className=" h-[calc(100vh-12rem)] md:h-[calc(100vh-9rem)] bg-gradient-to-r text-center bg-gray-50 dark:bg-gray-900">
+    <div className=" h-auto bg-gradient-to-r text-center bg-gray-50 dark:bg-gray-900">
       {/* <h2 className="text-4xl font-bold text-black  dark:text-white mb-8">
         Resume
       </h2> */}
@@ -19,7 +27,7 @@ const Resume = () => {
         Download Resume
       </a>
 
-      <div className="py-20">
+      <div className="py-14 ">
         <div className="group flex space-x-16 overflow-hidden">
           <div className="group-hover:paused flex animate-loop-scroll space-x-16">
             <img
@@ -172,6 +180,25 @@ const Resume = () => {
             />
           </div>
         </div>
+      </div>
+      <div className=" flex flex-col justify-around">
+        <a
+          href="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=milonga&extension=activity"
+          target="_blank"
+        >
+          <img
+            className="object-contain h-96 w-96  mx-auto rounded-2xl hover:scale-105 transition-all duration-200"
+            src="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=milonga&extension=activity"
+            alt="Leetcode activity"
+          />
+        </a>
+        <a href="https://github.com/AdhishthanAshok" target="_blank">
+          <img
+            className="object-cover object-center mb-10 h-auto md:h-50 w-auto  mx-auto rounded-lg hover:scale-105 transition-all"
+            src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=adhishthanashok&theme=aura_dark"
+            alt="Leetcode activity"
+          />
+        </a>
       </div>
     </div>
   );

@@ -39,7 +39,8 @@ const Home = () => {
               alt="Profile"
               className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-white dark:border-gray-900"
             />
-          </div>
+          </div>{" "}
+          flex flex-col justify-around
         </div>
 
         <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20">
@@ -134,11 +135,20 @@ const Home = () => {
             Days I Code
           </h1>
           <div className="w-full max-w-md h-auto md:max-w-4xl">
-            <img
-              className="object-cover object-center mb-10 h-auto md:h-50 w-full mx-auto transition-all duration-500 rounded-lg blur-sm hover:blur-none"
-              src={leetcode_image}
-              alt="Leetcode activity"
-            />
+            <a href="https://leetcode.com/u/adhishthanashok" target="_blank">
+              <img
+                className="object-cover object-center mb-10 h-64 md:h-50 w-96  mx-auto rounded-lg hover:scale-105 transition-all"
+                src="https://leetcard.jacoblin.cool/adhishthanashok?ext=heatmap"
+                alt="Leetcode activity"
+              />
+            </a>
+            <a href="https://github.com/AdhishthanAshok" target="_blank">
+              <img
+                className="object-cover object-center mb-10 h-auto md:h-50 w-auto  mx-auto rounded-lg hover:scale-105 transition-all"
+                src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=adhishthanashok&theme=aura_dark"
+                alt="Leetcode activity"
+              />
+            </a>
           </div>
         </div>
       </div>
