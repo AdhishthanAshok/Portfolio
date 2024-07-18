@@ -39,8 +39,7 @@ const Home = () => {
               alt="Profile"
               className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-white dark:border-gray-900"
             />
-          </div>{" "}
-          flex flex-col justify-around
+          </div>
         </div>
 
         <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20">
@@ -134,7 +133,7 @@ const Home = () => {
           <h1 className="text-3xl font-bold text-center py-8 dark:text-white">
             Days I Code
           </h1>
-          <div className="w-full max-w-md h-auto md:max-w-4xl">
+          <div className="w-full max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
             <a href="https://leetcode.com/u/adhishthanashok" target="_blank">
               <img
                 className="object-cover object-center mb-10 h-64 md:h-50 w-96  mx-auto rounded-lg hover:scale-105 transition-all"
