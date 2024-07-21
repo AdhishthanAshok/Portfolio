@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/PROJ1.png";
+import img1 from "../assets/image.png";
 import img2 from "../assets/PROJ2.png";
 import img3 from "../assets/PROJ3.png";
 import img4 from "../assets/PROJ4.png";
@@ -27,7 +27,7 @@ const Projects = () => {
             </p>
             <div className="flex justify-between">
               <a
-                href="https://glamgait-bay.vercel.app/"
+                href="https://glamgait-shopping.vercel.app/"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-700  dark:text-black dark:bg-gray-50 dark:hover:bg-gray-300"
                 target="_blank"
               >
@@ -49,7 +49,7 @@ const Projects = () => {
                 </svg>
               </a>
               <a
-                href="https://github.com/AdhishthanAshok/Projects/tree/main/React%20Projects/GlamGait%20(Footwear%20Shopping%20Site)"
+                href="https://github.com/AdhishthanAshok/GlamGait_Ecommerce"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-800  rounded-lg hover:underline  dark:text-white"
                 target="_blank"
               >
