@@ -1,4 +1,5 @@
 import React from "react";
+import BuyMeACoffeeButton from "./BuyMeACoffeeButton";
 
 const Footer = () => {
   const phoneNumber = "9068287133";
@@ -51,7 +52,8 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className="text-gray-800 dark:text-green-300 text-xs mr-5 font-bold">
+      <BuyMeACoffeeButton />
+      <p className="text-gray-800 dark:text-green-300 text-xs md:mr-2 font-bold">
         {" "}
         Created by Adhishthan Ashok ☘️
       </p>
