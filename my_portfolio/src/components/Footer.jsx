@@ -17,6 +17,7 @@ const Footer = () => {
             height="30"
             src="https://img.icons8.com/color/48/github--v1.png"
             alt="github--v1"
+            className="hover:scale-125 transition-all duration-100"
           />
         </a>
         <a href="https://www.linkedin.com/in/adhishthanashok/" target="_blank">
@@ -25,6 +26,7 @@ const Footer = () => {
             height="30"
             src="https://img.icons8.com/color/48/linkedin.png"
             alt="linkedin"
+            className="hover:scale-125 transition-all duration-100"
           />
         </a>
         <a href="https://leetcode.com/u/adhishthanashok/" target="_blank">
@@ -33,6 +35,7 @@ const Footer = () => {
             height="24"
             src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png"
             alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo"
+            className="hover:scale-125 transition-all duration-100"
           />
         </a>
         <a href="https://www.codechef.com/users/adhishthan123" target="_blank">
@@ -41,6 +44,7 @@ const Footer = () => {
             height="30"
             src="https://img.icons8.com/plasticine/100/codechef.png"
             alt="codechef"
+            className="hover:scale-125 transition-all duration-100"
           />
         </a>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -49,6 +53,7 @@ const Footer = () => {
             height="30"
             src="https://img.icons8.com/color/48/000000/apple-phone.png"
             alt="apple-phone"
+            className="hover:scale-125 transition-all duration-100"
           />
         </a>
       </div>

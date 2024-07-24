@@ -45,84 +45,84 @@ const Home = () => {
         <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20">
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110 animate-spin-slow"
               src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=9Gfx4Dfxl0JK&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto w-16 rounded-lg"
+              className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=23045&format=png&color=000000"
               alt=""
             />

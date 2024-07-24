@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       animation: {
+        "spin-slow": "spin 3s linear infinite",
         "loop-scroll": "loop-scroll 20s linear infinite",
       },
       keyframes: {
