@@ -44,11 +44,11 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="container my-24 mx-auto md:px-6 bg-gray-50 dark:bg-gray-900">
+    <div className="container my-24 mx-auto md:px-6 bg-gray-100 dark:bg-gray-900">
       {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
       <section>
         <div className="container md:px-12">
-          <div className="block rounded-lg bg-gray-50 px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+          <div className="block rounded-lg bg-gray-100 px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
             <div className="flex flex-row justify-center mb-10">
               <div className="mx-auto mb-12 text-center lg:mb-0">
                 <a
@@ -141,7 +141,7 @@ const ContactMe = () => {
                     </label>
                     <input
                       type="text"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                      className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                       placeholder="Bill"
                       name="user_name"
                       required
@@ -156,7 +156,7 @@ const ContactMe = () => {
                     </label>
                     <input
                       type="text"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                      className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                       placeholder="Type - if not"
                       required
                     />
@@ -184,7 +184,7 @@ const ContactMe = () => {
                   <input
                     type="text"
                     id="input-group-1"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                    className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                     placeholder="xyz@gmail.com"
                     name="user_email"
                   />
@@ -199,7 +199,7 @@ const ContactMe = () => {
                   <textarea
                     id="message"
                     rows="4"
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                     placeholder="Write your thoughts here..."
                     name="message"
                   ></textarea>

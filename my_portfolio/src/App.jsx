@@ -24,8 +24,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App  dark:bg-gray-900 transition-colors duration-300 bg-gray-50">
-        <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900">
+      <div className="App  dark:bg-gray-900 transition-colors duration-300 bg-gray-100">
+        <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link
               to="/"
@@ -68,7 +68,7 @@ function App() {
               } md:block md:items-center md:w-auto w-full`}
               id="navbar-cta"
             >
-              <ul className="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <ul className="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <NavLink
                     to="/"

@@ -3,19 +3,8 @@ import Theme from "./Theme.jsx";
 import resume from "../assets/Adhishthan_Ashok_Resume.pdf";
 
 const Resume = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
   return (
-    <div className=" h-auto bg-gradient-to-r text-center bg-gray-50 dark:bg-gray-900">
-      {/* <h2 className="text-4xl font-bold text-black  dark:text-white mb-8">
-        Resume
-      </h2> */}
+    <div className=" h-auto bg-gradient-to-r text-center bg-gray-100 dark:bg-gray-900">
       <p className="text-black dark:text-white mb-4">
         Click here to Download <span className="font-bold ">Resume</span>.
       </p>

@@ -1,0 +1,34 @@
+.group-hover\:opacity-100 {
+  opacity: 1;
+  visibility: visible;
+}
+.tooltip-content {
+  position: absolute;
+  bottom: 100%; /* Position the tooltip above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px; /* Adjust space between image and tooltip */
+  background-color: #000; /* Tooltip background color */
+  color: #fff; /* Tooltip text color */
+  padding: 8px; /* Tooltip padding */
+  border-radius: 4px; /* Tooltip border radius */
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.group:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-arrow {
+  position: absolute;
+  bottom: -5px; /* Adjust arrow position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000; /* Arrow color */
+}
