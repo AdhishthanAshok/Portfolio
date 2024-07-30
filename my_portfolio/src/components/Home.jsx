@@ -1,7 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import profile_pic from "../assets/pic1.png";
-import leetcode_image from "../assets/LC.png";
+import NextJS_Logo from "../assets/NextJS_Logo.png";
+
 import "./Home.css";
 
 const Home = () => {
@@ -62,8 +63,8 @@ const Home = () => {
 
           <div className="relative group">
             <img
-              className="h-auto w-16 rounded-lg hover:scale-110"
-              src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+              className="h-auto w-20 rounded-lg hover:scale-110"
+              src={NextJS_Logo}
               alt="Skill 2"
               data-tooltip-target="tooltip-skill-2"
             />

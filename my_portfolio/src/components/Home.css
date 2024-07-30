@@ -30,5 +30,5 @@
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #000; /* Arrow color */
+  border-top: 5px solid #000;
 }

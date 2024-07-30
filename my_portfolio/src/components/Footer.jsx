@@ -1,5 +1,6 @@
 import React from "react";
 import BuyMeACoffeeButton from "./BuyMeACoffeeButton";
+import "./Home.css";
 
 const Footer = () => {
   const phoneNumber = "9068287133";
