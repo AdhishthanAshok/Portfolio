@@ -65,10 +65,10 @@ const Theme = () => {
     >
       <button
         onClick={toggleDarkMode}
-        className={`bg-${darkMode ? "gray-900" : "br-gray-50"} text-${
+        className={`bg-${darkMode ? "gray-900" : "gray-50"} text-${
           darkMode ? "" : "gray-900"
         } dark:bg-${darkMode ? "" : "gray-900"} dark:text-${
-          darkMode ? "gray-900" : "br-gray-50"
+          darkMode ? "gray-900" : "gray-50"
         } font-bold py-2 px-4 rounded-lg hover:bg-${
           darkMode ? "gray-900" : "gray-200"
         } dark:hover:bg-${

@@ -172,12 +172,12 @@ const Resume = () => {
       </div>
       <div className=" flex flex-col justify-around">
         <a
-          href="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=milonga&extension=activity"
+          href="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=baloo&extension=activity"
           target="_blank"
         >
           <img
-            className="object-contain h-96 w-96  mx-auto rounded-2xl hover:scale-105 transition-all duration-200"
-            src="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=milonga&extension=activity"
+            className="object-contain h-96 w-96  mx-auto hover:scale-105 transition-all duration-200"
+            src="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=baloo&extension=activity"
             alt="Leetcode activity"
           />
         </a>

@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 body {
-  font-family: "PT Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-optical-sizing: auto;
 }
 
 @layer utilities {
