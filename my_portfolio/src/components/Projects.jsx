@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard.jsx";
 import arrow from "../assets/down_arrow.gif";
 
+// Project code will be edited again and agin on every new project
+
 const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r transition-colors duration-300 bg-gray-100 dark:bg-gray-900">
