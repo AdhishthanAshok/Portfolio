@@ -9,24 +9,30 @@ const Theme = () => {
   const [darkMode, setDarkMode] = useState(false);
   const ref = useRef(null);
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
   const toggleDarkMode = async () => {
     if (!ref.current) return;
 
     const newDarkMode = !darkMode;
+
+    if (isSafari) {
+      // Run the normal theme-changing code for Safari
+      setDarkMode(newDarkMode);
+      return;
+    }
+
+    if (!document.startViewTransition) {
+      // Fallback for browsers that don't support startViewTransition
+      setDarkMode(newDarkMode);
+      return;
+    }
+
     await document.startViewTransition(() => {
       flushSync(() => {
         setDarkMode(newDarkMode);
       });
     }).ready;
-
-    if (
-      !ref.current ||
-      !document.startViewTransition ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      setDarkMode(newDarkMode);
-      return;
-    }
 
     const { top, left, width, height } = ref.current.getBoundingClientRect();
     const x = left + width / 2;
