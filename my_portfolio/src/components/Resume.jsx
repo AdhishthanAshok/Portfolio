@@ -171,6 +171,7 @@ const Resume = () => {
         </div>
       </div>
       <div className=" flex flex-col justify-around">
+        {/* This is the section where all the Stat card will appear */}
         <a
           href="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=baloo&extension=activity"
           target="_blank"
