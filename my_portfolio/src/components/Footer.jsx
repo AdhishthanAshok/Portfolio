@@ -50,10 +50,10 @@ const Footer = () => {
         </a>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
           <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/color/48/000000/apple-phone.png"
-            alt="apple-phone"
+            width="32"
+            height="32"
+            src="https://img.icons8.com/color/48/whatsapp--v1.png"
+            alt="codechef"
             className="hover:scale-125 transition-all duration-100"
           />
         </a>
