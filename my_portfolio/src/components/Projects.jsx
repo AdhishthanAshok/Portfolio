@@ -12,10 +12,10 @@ const Projects = () => {
       </h2>
       <div className="mx-10 dark:text-gray-50">
         <p className="pb-4">
-          <span className="font-bold font-3xl">Currently Working on : </span>{" "}
-          <span className="text-blue-500 font-bold">Vroom Call</span>{" "}
+          <span className="font-bold font-3xl">Currently Learning : </span>{" "}
+          <span className="text-blue-500 font-bold">AWS</span>{" "}
           <span className="text-gray-500">
-            (A Video calling and meeting app)
+            (Cloud Essentials from CourseEra)
           </span>
         </p>
         <h1 className="font-bold inline-block mr-4">
