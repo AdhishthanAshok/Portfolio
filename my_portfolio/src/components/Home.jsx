@@ -1,8 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import profile_pic from "../assets/pic1.png";
+// import profile_pic from "../assets/pic1.png";
+import profile_pic from "../assets/test_pic11.png";
 import NextJS_Logo from "../assets/NextJS_Logo.png";
-
 import "./Home.css";
 
 const Home = () => {
@@ -35,10 +35,15 @@ const Home = () => {
             </h1>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <img
+            {/* <img
               src={profile_pic}
               alt="Profile"
               className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-gray-100 dark:border-gray-900"
+            /> */}
+            <img
+              src={profile_pic}
+              alt="Profile"
+              className="rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 hover:scale-105 border-gray-100 dark:border-gray-900 transition-all duration-300 "
             />
           </div>
         </div>
