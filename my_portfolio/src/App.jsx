@@ -124,6 +124,7 @@ function App() {
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/about-me" element={<AboutMe />} />
         </Routes>
         <Footer />
       </div>

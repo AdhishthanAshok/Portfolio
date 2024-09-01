@@ -32,3 +32,19 @@
   border-right: 5px solid transparent;
   border-top: 5px solid #000;
 }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-text {
+  background-size: 200% 200%;
+  animation: gradient-animation 0.5s ease infinite;
+}
