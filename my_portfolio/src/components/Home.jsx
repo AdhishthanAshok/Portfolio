@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 // import profile_pic from "../assets/pic1.png";
-import profile_pic from "../assets/test_pic11.png";
+import profile_pic from "../assets/test_pic11.webp";
 import NextJS_Logo from "../assets/NextJS_Logo.png";
 import "./Home.css";
 

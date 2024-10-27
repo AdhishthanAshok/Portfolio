@@ -9,11 +9,11 @@ const AboutMe = () => {
         About Me
       </h2>
 
-      <div className="h-auto bg-blue-500 py-6 flex flex-col justify-center sm:py-12">
+      <div className="h-auto bg-blue-500 dark:bg-blue-700 py-6 flex flex-col justify-center sm:py-12">
         <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
           <div className="relative text-gray-700 antialiased text-sm font-semibold">
             {/* <!-- Vertical bar running through middle --> */}
-            <div className="hidden sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+            <div className="hidden sm:block w-1 bg-blue-300 dark:bg-blue-900 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
             <AboutmeCard
               details={
@@ -99,18 +99,49 @@ const AboutMe = () => {
             <AboutmeCard
               details={
                 <>
-                  Started{" "}
+                  Started Working on{" "}
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Game Dev&nbsp;
+                  Javascript&nbsp;
                   </span>
-                  using Unity in&nbsp;
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    C#&nbsp;
-                  </span>
-                  Made my First Game
+                  and learned about Web Development
                 </>
               }
               position="left"
+            />
+            <AboutmeCard
+              details={
+                <>
+                  Got internships at{" "}
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                  CodeClause and Fitness Bell India&nbsp;
+                  </span>
+                  and learned about Web Designing
+                </>
+              }
+              position="right"
+            />
+            <AboutmeCard
+              details={
+                <>
+                  Currently working as a Backend Developer Intern at{" "}
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                  Educase India&nbsp;
+                  </span>
+                  and learning about NodeJs, Javascript, SQL 
+                </>
+              }
+              position="left"
+            />
+            <AboutmeCard
+              details={
+                <>
+                  More Details are <br /> {" "}
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                  Coming Soon.....&nbsp;
+                  </span>
+                </>
+              }
+              position="right"
             />
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
