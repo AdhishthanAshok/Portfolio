@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutmeCard = ({ details, position }) => {
   return position === "left" ? (
-    <div className="mt-6 sm:mt-0 sm:mb-12">
+    <div className="mt-6 sm:mt-0 sm:mb-12 hover:scale-110 transition-all ease-in-out ">
       <div className="flex flex-col sm:flex-row items-center">
         <div className="flex justify-start w-full mx-auto items-center">
           <div className="w-full sm:w-1/2 sm:pr-8">
@@ -28,7 +28,7 @@ const AboutmeCard = ({ details, position }) => {
       </div>
     </div>
   ) : (
-    <div className="mt-6 sm:mt-0 sm:mb-12">
+    <div className="mt-6 sm:mt-0 sm:mb-12 hover:scale-110 transition-all ease-in-out">
       <div className="flex flex-col sm:flex-row items-center">
         <div className="flex justify-end w-full mx-auto items-center">
           <div className="w-full sm:w-1/2 sm:pl-8">

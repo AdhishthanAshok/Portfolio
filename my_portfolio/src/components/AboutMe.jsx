@@ -6,7 +6,9 @@ const AboutMe = () => {
   return (
     <div className="h-auto bg-gradient-to-r text-center bg-gray-100 dark:bg-gray-900">
       <h2 className="text-4xl font-bold bg-gray-100 text-black pb-8 text-center  dark:text-white dark:bg-gray-900 transition-colors duration-300">
-        About Me
+        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+          About Me
+        </span>
       </h2>
 
       <div className="h-auto bg-blue-500 dark:bg-blue-700 py-6 flex flex-col justify-center sm:py-12">
@@ -101,7 +103,7 @@ const AboutMe = () => {
                 <>
                   Started Working on{" "}
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                  Javascript&nbsp;
+                    Javascript&nbsp;
                   </span>
                   and learned about Web Development
                 </>
@@ -113,7 +115,7 @@ const AboutMe = () => {
                 <>
                   Got internships at{" "}
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                  CodeClause and Fitness Bell India&nbsp;
+                    CodeClause and Fitness Bell India&nbsp;
                   </span>
                   and learned about Web Designing
                 </>
@@ -125,9 +127,9 @@ const AboutMe = () => {
                 <>
                   Currently working as a Backend Developer Intern at{" "}
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                  Educase India&nbsp;
+                    Educase India&nbsp;
                   </span>
-                  and learning about NodeJs, Javascript, SQL 
+                  and learning about NodeJs, Javascript, SQL
                 </>
               }
               position="left"
@@ -137,7 +139,7 @@ const AboutMe = () => {
                 <>
                   More Details are <br /> {" "}
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                  Coming Soon.....&nbsp;
+                    Coming Soon.....&nbsp;
                   </span>
                 </>
               }

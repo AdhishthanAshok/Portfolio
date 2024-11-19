@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, React } from "react";
 import Typewriter from "typewriter-effect";
 // import profile_pic from "../assets/pic1.png";
 import profile_pic from "../assets/test_pic11.webp";
@@ -6,6 +6,11 @@ import NextJS_Logo from "../assets/NextJS_Logo.png";
 import "./Home.css";
 
 const Home = () => {
+  const [isLoaded, setIsLoaded] = useState(false);  // State to track image load
+
+  const handleImageLoad = () => {
+    setIsLoaded(true);  // Set to true when the image is loaded
+  };
   return (
     <div className="smooth-scroll flex flex-col items-center bg-gray-100 dark:bg-gray-900 h-auto">
       <div className="px-0 mx-0 h-auto flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
@@ -43,7 +48,10 @@ const Home = () => {
             <img
               src={profile_pic}
               alt="Profile"
-              className="rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 hover:scale-105 border-gray-100 dark:border-gray-900 transition-all duration-300 "
+              onLoad={handleImageLoad}  // Detect when image has loaded
+              className={`rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
+                          ${isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"} 
+                          hover:scale-105 border-gray-100 dark:border-gray-900`}
             />
           </div>
         </div>
@@ -68,23 +76,6 @@ const Home = () => {
 
           <div className="relative group">
             <img
-              className="h-auto w-20 rounded-lg hover:scale-110"
-              src={NextJS_Logo}
-              alt="Skill 2"
-              data-tooltip-target="tooltip-skill-2"
-            />
-            <div
-              id="tooltip-skill-2"
-              role="tooltip"
-              className="tooltip-content"
-            >
-              Next.js
-              <div className="tooltip-arrow"></div>
-            </div>
-          </div>
-
-          <div className="relative group">
-            <img
               className="h-auto w-16 rounded-lg hover:scale-110"
               src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
               alt="Skill 3"
@@ -96,6 +87,40 @@ const Home = () => {
               className="tooltip-content"
             >
               Node
+              <div className="tooltip-arrow"></div>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <img
+              className="h-auto w-16 rounded-lg hover:scale-110"
+              src="https://img.icons8.com/fluency/48/mysql-logo.png"
+              alt="Skill 3"
+              data-tooltip-target="tooltip-skill-3"
+            />
+            <div
+              id="tooltip-skill-3"
+              role="tooltip"
+              className="tooltip-content"
+            >
+              MySQL/SQL
+              <div className="tooltip-arrow"></div>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <img
+              className="h-auto w-20 rounded-lg hover:scale-110"
+              src={NextJS_Logo}
+              alt="Skill 2"
+              data-tooltip-target="tooltip-skill-2"
+            />
+            <div
+              id="tooltip-skill-2"
+              role="tooltip"
+              className="tooltip-content"
+            >
+              Next.js
               <div className="tooltip-arrow"></div>
             </div>
           </div>
@@ -215,23 +240,6 @@ const Home = () => {
               className="tooltip-content"
             >
               Git
-              <div className="tooltip-arrow"></div>
-            </div>
-          </div>
-
-          <div className="relative group">
-            <img
-              className="h-auto w-16 rounded-lg hover:scale-110"
-              src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
-              alt="Skill 11"
-              data-tooltip-target="tooltip-skill-11"
-            />
-            <div
-              id="tooltip-skill-11"
-              role="tooltip"
-              className="tooltip-content"
-            >
-              Docker
               <div className="tooltip-arrow"></div>
             </div>
           </div>
