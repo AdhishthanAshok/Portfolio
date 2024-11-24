@@ -64,9 +64,8 @@ function App() {
               </button>
             </div>
             <div
-              className={`${
-                isMenuOpen ? "block" : "hidden"
-              } md:block md:items-center md:w-auto w-full`}
+              className={`${isMenuOpen ? "block" : "hidden"
+                } md:block md:items-center md:w-auto w-full`}
               id="navbar-cta"
             >
               <ul className="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -79,7 +78,7 @@ function App() {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/experience"
                     activeclassname="bg-blue-700 text-white"
@@ -87,7 +86,7 @@ function App() {
                   >
                     Experience
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     to="/projects"
@@ -131,7 +130,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
+          {/* <Route path="/experience" element={<Experience />} /> */}
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact-me" element={<ContactMe />} />
