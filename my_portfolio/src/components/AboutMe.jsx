@@ -125,11 +125,15 @@ const AboutMe = () => {
             <AboutmeCard
               details={
                 <>
-                  Currently working as a Backend Developer Intern at{" "}
+                  Worked for&nbsp;
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                    2 Months &nbsp;
+                  </span>
+                  as Backend Developer Intern at&nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Educase India&nbsp;
                   </span>
-                  and learning about NodeJs, Javascript, SQL
+                  and leant about NodeJs, Javascript, SQL
                 </>
               }
               position="left"
