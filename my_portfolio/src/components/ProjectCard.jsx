@@ -14,7 +14,7 @@ const ProjectCard = ({ img, title, skills, live_link, code_link }) => {
         <div className="flex justify-between ">
           <a
             href={live_link}
-            className="hover:animate-bounce transition-all duration-100 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-700  dark:text-black dark:bg-gray-100 dark:hover:bg-gray-300"
+            className="hover:scale-105 transition-all duration-100 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-700  dark:text-black dark:bg-gray-100 dark:hover:bg-gray-300"
             target="_blank"
           >
             Live Demo

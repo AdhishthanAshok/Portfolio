@@ -172,13 +172,14 @@ const Resume = () => {
       </div>
       <div className=" flex flex-col justify-around">
         {/* This is the section where all the Stat card will appear */}
+      
         <a
-          href="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=baloo&extension=activity"
+          href="https://leetcard.jacoblin.cool/adhishthanashok?theme=nord&font=baloo&ext=contest"
           target="_blank"
         >
           <img
             className="object-contain h-96 w-96  mx-auto hover:scale-105 transition-all duration-200"
-            src="https://leetcode.card.workers.dev/adhishthanashok?theme=nord&font=baloo&extension=activity"
+            src="https://leetcard.jacoblin.cool/adhishthanashok?theme=nord&font=baloo&ext=contest"
             alt="Leetcode activity"
           />
         </a>

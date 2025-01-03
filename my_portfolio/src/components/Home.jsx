@@ -264,13 +264,13 @@ const Home = () => {
 
         <div className="flex flex-col justify-center items-center w-full h-auto">
           <h1 className="text-3xl font-bold text-center py-8 dark:text-white">
-            Days I Code
+            My Regular Activities
           </h1>
           <div className="w-full max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
             <a href="https://leetcode.com/u/adhishthanashok" target="_blank">
               <img
-                className="object-cover object-center mb-10 h-64 md:h-50 w-96  mx-auto rounded-lg hover:scale-105 transition-all"
-                src="https://leetcard.jacoblin.cool/adhishthanashok?ext=heatmap"
+                className="object-cover object-center mb-10 h-auto md:h-auto w-96  mx-auto rounded-lg hover:scale-105 transition-all"
+                src="https://leetcard.jacoblin.cool/adhishthanashok?ext=contest"
                 alt="Leetcode activity"
               />
             </a>
