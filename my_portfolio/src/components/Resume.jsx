@@ -174,12 +174,12 @@ const Resume = () => {
         {/* This is the section where all the Stat card will appear */}
       
         <a
-          href="https://leetcard.jacoblin.cool/adhishthanashok?theme=nord&font=baloo&ext=contest"
+          href="https://leetcard.jacoblin.cool/adhishthanashok?theme=dark&font=baloo&ext=contest"
           target="_blank"
         >
           <img
             className="object-contain h-96 w-96  mx-auto hover:scale-105 transition-all duration-200"
-            src="https://leetcard.jacoblin.cool/adhishthanashok?theme=nord&font=baloo&ext=contest"
+            src="https://leetcard.jacoblin.cool/adhishthanashok?theme=dark&font=baloo&ext=heatmap"
             alt="Leetcode activity"
           />
         </a>
