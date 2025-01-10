@@ -2,13 +2,11 @@ import { useState, React } from "react";
 import Typewriter from "typewriter-effect";
 // import profile_pic from "../assets/pic1.png";
 import profile_pic from "../assets/Profile_Pic.webp";
-import hover_image from "../assets/Guitar_Pic.jpg";
 import NextJS_Logo from "../assets/NextJS_Logo.png";
 import "./Home.css";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);  // State to track image load
-  const [isHovered, setIsHovered] = useState(false);
 
   const handleImageLoad = () => {
     setIsLoaded(true);  // Set to true when the image is loaded
@@ -42,16 +40,19 @@ const Home = () => {
             </h1>
           </div>
           <div className="flex-1 flex items-center justify-center">
-          <img
-            src={isHovered ? hover_image : profile_pic} // Change image on hover
-            alt="Profile"
-            onLoad={handleImageLoad} // Detect when image has loaded
-            onMouseEnter={() => setIsHovered(true)} // Set hover state to true
-            onMouseLeave={() => setIsHovered(false)} // Set hover state to false
-            className={`rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
-                        ${isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"} 
-                        hover:scale-105 border-gray-100 dark:border-gray-900`}
-          />
+            {/* <img
+              src={profile_pic}
+              alt="Profile"
+              className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-gray-100 dark:border-gray-900"
+            /> */}
+            <img
+              src={profile_pic}
+              alt="Profile"
+              onLoad={handleImageLoad}  // Detect when image has loaded
+              className={`rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
+                          ${isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"} 
+                          hover:scale-105 border-gray-100 dark:border-gray-900`}
+            />
           </div>
         </div>
 
