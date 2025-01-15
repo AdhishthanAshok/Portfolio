@@ -48,7 +48,7 @@ const Experience = () => {
                             alt="EduCase Certificate"
                         />
                         <div className="mt-4">
-                            <a href="https://drive.google.com/file/d/1KxXnC5hZK9GPvdnHKUu4Y3Wl6K05_6vZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <a href="https://drive.google.com/file/d/11SJFYRJo0t0hEAGIEAWsIic-YvtsKUMs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                 <button
                                     type="button"
                                     className="md:h-16 md:w-32 text-white bg-green-700 hover:bg-green-800 rounded md:font-medium text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 transition duration-300"
