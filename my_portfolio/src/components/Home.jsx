@@ -46,10 +46,11 @@ const Home = () => {
               className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-gray-100 dark:border-gray-900"
             /> */}
             <img
-              src={profile_pic}
+              // src={profile_pic}
+              src = "https://iili.io/26cIrcG.md.png"
               alt="Profile"
               onLoad={handleImageLoad}  // Detect when image has loaded
-              className={`rounded-full w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
+              className={`rounded-3xl w-52 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
                           ${isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"} 
                           hover:scale-105 border-gray-100 dark:border-gray-900`}
             />
