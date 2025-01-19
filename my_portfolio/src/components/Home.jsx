@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="smooth-scroll flex flex-col items-center bg-gray-100 dark:bg-gray-900 h-auto">
       <div className="px-0 mx-0 h-auto flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
-        <div className="flex flex-col md:flex-row gap-12 items-center justify-between w-full max-w-4xl py-8">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl py-4">
           <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white inline-block">
               Hello, I'm{"\u00A0"}
@@ -40,19 +40,15 @@ const Home = () => {
             </h1>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            {/* <img
-              src={profile_pic}
-              alt="Profile"
-              className="rounded-full w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 border-gray-100 dark:border-gray-900"
-            /> */}
             <img
-              // src={profile_pic}
-              src = "https://iili.io/26cIrcG.md.png"
+              src="https://iili.io/26cIrcG.md.png"
               alt="Profile"
               onLoad={handleImageLoad}  // Detect when image has loaded
-              className={`rounded-3xl w-52 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-4 transition-all duration-500 
+              className={`rounded-full transition-all duration-500 
                           ${isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"} 
-                          hover:scale-105 border-gray-100 dark:border-gray-900`}
+                          hover:scale-105 border-4 
+                          border-gray-100 dark:border-gray-900 
+                          w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80`}
             />
           </div>
         </div>

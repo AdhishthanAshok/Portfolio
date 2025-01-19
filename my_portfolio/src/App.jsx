@@ -12,7 +12,8 @@ import AboutMe from "./components/AboutMe";
 import Resume from "./components/Resume";
 import ContactMe from "./components/ContactMe";
 import Theme from "./components/Theme.jsx";
-import header_logo from "./assets/AA_New.png";
+// import header_logo from "./assets/AA_New.png";
+import header_logo from "./assets/new_logo.png";
 import Footer from "./components/Footer.jsx";
 import Experience from "./components/Experience.jsx";
 
@@ -25,16 +26,16 @@ function App() {
 
   return (
     <Router>
-      <div className="App  dark:bg-gray-900 transition-colors duration-300 bg-gray-100">
+      <div className="App dark:bg-gray-900 transition-colors duration-300 bg-gray-100">
         <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
             <Link
               to="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
                 src={header_logo}
-                className="h-8 dark:bg-gray"
+                className="h-16 dark:bg-gray"
                 alt="Adhishthan Logo"
               />
             </Link>
