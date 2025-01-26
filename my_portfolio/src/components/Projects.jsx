@@ -45,7 +45,7 @@ const Projects = () => {
           skills={
             <>
               MERN Stack, JavaScript, TailwindCSS, Toastify, Postman <br/>{" "}
-              <a href="https://glamgait-admin.vercel.app/addproduct" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:scale-105 hover:text-green-700 ml-2">
+              <a href="https://glamgait-admin.vercel.app" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:scale-105 hover:text-green-700 ml-2">
                 Admin Panel
               </a>
             </>
