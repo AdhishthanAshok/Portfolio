@@ -57,7 +57,7 @@ const Projects = () => {
           img="/PROJ2.png"
           title="Chitra-Khoj"
           skills=" ReactJs, TailwindCSS , HTML , JavaScript , Api Integration, Postman "
-          live_link="https://image-search-app-delta-beige.vercel.app/"
+          live_link="https://chitrakhoj.vercel.app/"
           code_link="https://github.com/AdhishthanAshok/Projects/tree/main/React%20Projects/Image%20Search%20App"
         />
         <ProjectCard
