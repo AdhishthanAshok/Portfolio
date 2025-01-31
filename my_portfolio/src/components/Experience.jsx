@@ -91,6 +91,7 @@ const Experience = () => {
                         </span></b>   and successfully
                         deployed the refined code to production for live use.
                     </p>
+                    <p className="mt-2 text-left"><b>Worked on 13 modules : </b> Attendance, Virtual Meeting, Test Report, E-learning, Meal Calendar, Holiday Calendar, SMS Email, Cctv, Event, Gallery, Packs, Kit Ordering.</p>
                 </div>
             </div>
 

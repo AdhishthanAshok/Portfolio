@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r transition-colors duration-300 bg-gray-100 dark:bg-gray-900">
       <h2 className="text-4xl font-bold bg-gray-100 text-black pb-8 text-center  dark:text-white dark:bg-gray-900 transition-colors duration-300">
-        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+        <span className="shinny-text">
           ProJectS
         </span>
       </h2>
