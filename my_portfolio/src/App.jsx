@@ -15,6 +15,7 @@ import Theme from "./components/Theme.jsx";
 // import header_logo from "./assets/AA_New.png";
 import header_logo from "./assets/new_logo.png";
 import Footer from "./components/Footer.jsx";
+import { Analytics } from "@vercel/analytics/react"
 import Experience from "./components/Experience.jsx";
 
 function App() {
@@ -128,6 +129,7 @@ function App() {
             </div>
           </div>
         </nav>
+        <Analytics />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
