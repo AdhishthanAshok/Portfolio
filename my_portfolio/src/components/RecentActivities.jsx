@@ -2,7 +2,7 @@ import React from 'react';
 
 const RecentActivities = () => {
     return (
-        <div className="mt-5 bg-gray-100 dark:bg-gray-900 w-full max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
+        <div className="mt-5 bg-gray-100 dark:bg-gray-900 w-11/12 max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
             <h1 className="text-3xl font-bold text-center py-8 text-gray-900 dark:text-white">
                 My Recent Achievements
             </h1>
