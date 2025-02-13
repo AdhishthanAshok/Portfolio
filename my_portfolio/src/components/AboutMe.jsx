@@ -51,6 +51,9 @@ const AboutMe = () => {
                   </span>
                   {<br />}
                   from CBSE Board
+                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+                    &nbsp;with above 90%
+                  </span>
                 </>
               }
               position="left"
@@ -133,10 +136,21 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Educase India&nbsp;
                   </span>
-                  and leant about NodeJs, Javascript, SQL
+                  and learnt about NodeJs, Javascript, SQL
                 </>
               }
               position="left"
+            />
+            <AboutmeCard
+              details={
+                <>
+                  Review Paper Accepted in
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                    &nbsp;IEEE Xplore at OTCON 4.0
+                  </span>
+                </>
+              }
+              position="right"
             />
             <AboutmeCard
               details={
@@ -146,7 +160,7 @@ const AboutMe = () => {
                   </span>
                 </>
               }
-              position="right"
+              position="left"
             />
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
