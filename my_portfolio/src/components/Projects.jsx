@@ -17,7 +17,7 @@ const Projects = () => {
           <span className="font-bold font-3xl">Currently Learning : </span>{" "}
           <span className="text-blue-500 font-bold">AWS</span>{" "}
           <span className="text-gray-500">
-            (Cloud Essentials from CourseEra)
+            (Migrating to the AWS Cloud)
           </span>
         </p>
         <h1 className="font-bold inline-block mr-4">
@@ -44,7 +44,7 @@ const Projects = () => {
           title="Glam-Gait: Shoe Site"
           skills={
             <>
-              MERN Stack, JavaScript, TailwindCSS, Toastify, Postman <br/>{" "}
+              MERN Stack, JavaScript, TailwindCSS, Toastify, Postman <br />{" "}
               <a href="https://glamgait-admin.vercel.app" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:scale-105 hover:text-green-700 ml-2">
                 Admin Panel
               </a>
