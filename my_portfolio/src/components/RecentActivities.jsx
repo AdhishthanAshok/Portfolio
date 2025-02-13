@@ -20,8 +20,8 @@ const RecentActivities = () => {
                             <td className="py-2 px-4 text-gray-900 dark:text-white border-b-2 border-r-2 border-gray-700 dark:border-gray-400">
                                 Research paper on <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">“Decentralized File Sharing System using Blockchain”</span> was accepted for oral presentation at the <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">2025 4th OPJU International Technology Conference (OTCON)</span>. The paper is also eligible for <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">IEEE Xplore publication</span>.
                             </td>
-                            <td className="py-2 px-4 ">
-                                <a href="https://drive.google.com/file/d/1ZJ-Il-Hn6WCV9dkTOCmRVaOM3rNLrzEg/view" className="text-indigo-600 underline" target="_blank">Link</a>
+                            <td className="py-2 px-4  border-b-2 border-gray-700 dark:border-gray-400">
+                                <a href="https://drive.google.com/file/d/1ZJ-Il-Hn6WCV9dkTOCmRVaOM3rNLrzEg/view" className="text-indigo-600 underline" target="_blank"><b>Link</b></a>
                             </td>
                         </tr>
                         <tr className="border-b ">
@@ -29,7 +29,7 @@ const RecentActivities = () => {
                                 Successfully sold the <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Vroom Calling project</span> to <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Course Compass</span>, a Mumbai-based <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Ed-Tech startup</span>. Following the acquisition, I was offered the position of <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">backend lead</span> for the app’s ongoing development and scalability.
                             </td>
                             <td className="py-2 px-4">
-                                <a href="https://github.com/AdhishthanAshok/Vroom" target="_blank" className="text-indigo-600 underline">Link</a>
+                                <a href="https://github.com/AdhishthanAshok/Vroom" target="_blank" className="text-indigo-600 underline"><b>Link</b></a>
                             </td>
                         </tr>
                     </tbody>
