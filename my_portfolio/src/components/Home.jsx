@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 import RegularActivities from "./RegularActivities";
 import "./Home.css";
 import TechStack from "./TechStack";
+import RecentActivities from "./RecentActivities";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);  // State to track image load
@@ -52,7 +53,10 @@ const Home = () => {
           </div>
         </div>
 
+
         <TechStack />
+
+        <RecentActivities />
 
         <RegularActivities />
       </div>
