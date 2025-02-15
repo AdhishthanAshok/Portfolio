@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard.jsx";
 import arrow from "../assets/down_arrow.gif";
 
-// Project code will be edited again and agin on every new project
+// Project code will be edited again and again on every new project
 
 const Projects = () => {
   return (
