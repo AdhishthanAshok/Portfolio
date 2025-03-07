@@ -1,6 +1,7 @@
 import React from "react";
 import BuyMeACoffeeButton from "./BuyMeACoffeeButton";
 import "./Home.css";
+import JokeOfTheDay from "./JokeOfTheDay";
 
 const Footer = () => {
   const phoneNumber = "9068287133";
@@ -59,6 +60,7 @@ const Footer = () => {
         </a>
       </div>
       <BuyMeACoffeeButton />
+      <JokeOfTheDay />
       <p className="text-gray-800 dark:text-green-300 text-xs md:mr-2 font-bold">
         {" "}
         Created by Adhishthan Ashok ☘️
