@@ -11,7 +11,6 @@ const JokeOfTheDay = () => {
             const response = await fetch('https://official-joke-api.appspot.com/jokes/programming/random');
             const data = await response.json();
             setJoke(data[0]);  // Set the new joke
-            console.log(data);
             setShowJokeWindow(true); // Show the joke window
             setRevealPunchline(false); // Hide punchline initially
         } catch (error) {
