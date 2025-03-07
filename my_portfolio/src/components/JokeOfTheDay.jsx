@@ -38,7 +38,7 @@ const JokeOfTheDay = () => {
             {/* Joke of the Day Button */}
             <button
                 onClick={fetchJoke}
-                className="px-6 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-lg hover:bg-indigo-700 transition-all duration-300 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:text-gray-200"
+                className="px-3 py-2 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-lg hover:bg-indigo-700 hover:scale-105 transition-all duration-300 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:text-gray-200"
             >
                 Joke of the Day
             </button>
