@@ -59,8 +59,8 @@ const Footer = () => {
           />
         </a>
       </div>
-      <BuyMeACoffeeButton />
       <JokeOfTheDay />
+      <BuyMeACoffeeButton />
       <p className="text-gray-800 dark:text-green-300 text-xs md:mr-2 font-bold">
         {" "}
         Created by Adhishthan Ashok ☘️
