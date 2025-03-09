@@ -13,16 +13,17 @@ const Home = () => {
   };
   return (
     <div className="smooth-scroll flex flex-col items-center bg-gray-100 dark:bg-gray-900 h-auto">
+      <p className="italic text-lg md:text-lg font-bold text-green-600 dark:text-green-600">{"<!-- An Engineer, not a Frameworker -->"}</p>
       <div className="px-0 mx-0 h-auto flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl py-4">
           <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white inline-block">
+            <p className=" text-2xl md:text-2xl font-bold text-gray-900 dark:text-white inline-block">
               Hello, I'm{"\u00A0"}
-            </h1>
-            <h1 className="text-2xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-600">
+            </p>
+            <h1 className="text-3xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-600">
               Adhishthan Ashok
             </h1>
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+            <h1 className="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white">
               I do {"\u00A0"} <br />
             </h1>
             <h1 className="text-2xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-600 inline-block">
