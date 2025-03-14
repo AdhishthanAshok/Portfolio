@@ -4,6 +4,7 @@ import RegularActivities from "./RegularActivities";
 import "./Home.css";
 import TechStack from "./TechStack";
 import RecentActivities from "./RecentActivities";
+import profile_pic from "../assets/New_Profile_Pic.png"
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);  // State to track image load
@@ -42,7 +43,7 @@ const Home = () => {
           </div>
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="https://iili.io/26cIrcG.md.png"
+              src={profile_pic}
               alt="Profile"
               onLoad={handleImageLoad}  // Detect when image has loaded
               className={`rounded-full transition-all duration-500 
