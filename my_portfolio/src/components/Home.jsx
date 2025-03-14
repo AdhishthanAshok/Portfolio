@@ -4,7 +4,7 @@ import RegularActivities from "./RegularActivities";
 import "./Home.css";
 import TechStack from "./TechStack";
 import RecentActivities from "./RecentActivities";
-import profile_pic from "../assets/New_Profile_Pic.png"
+import profile_pic from "../assets/New_Profile_Pic.png";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);  // State to track image load

@@ -91,7 +91,7 @@ const TechStack = () => {
 
             <div className="relative group">
                 <img
-                    className="h-auto w-16 rounded-lg hover:scale-110"
+                    className="h-auto w-16 rounded-lg hover:scale-110 "
                     src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
                     alt="Skill 5"
                     data-tooltip-target="tooltip-skill-5"
@@ -193,7 +193,7 @@ const TechStack = () => {
 
             <div className="relative group">
                 <img
-                    className="h-auto w-16 rounded-lg hover:scale-110"
+                    className="h-auto w-16 rounded-lg hover:scale-110 animate-spin-slow"
                     src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
                     alt="Skill 12"
                     data-tooltip-target="tooltip-skill-12"
