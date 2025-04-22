@@ -15,9 +15,9 @@ const Projects = () => {
       <div className="mx-10 dark:text-gray-50">
         <p className="pb-4">
           <span className="font-bold font-3xl">Currently Learning : </span>{" "}
-          <span className="text-blue-500 font-bold">AWS</span>{" "}
+          <span className="text-blue-500 font-bold">Python</span>{" "}
           <span className="text-gray-500">
-            (Migrating to the AWS Cloud)
+            (Working on Interesting Projects)
           </span>
         </p>
         <h1 className="font-bold inline-block mr-4">
