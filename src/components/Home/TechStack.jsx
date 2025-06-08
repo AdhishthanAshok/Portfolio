@@ -1,5 +1,5 @@
 import React from 'react';
-import NextJS_Logo from "../assets/NextJS_Logo.png";
+import NextJS_Logo from "../../assets/NextJS_Logo.png";
 
 const TechStack = () => {
     return (

@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-import Theme from "./Theme.jsx";
 import resume from "../assets/Adhishthan_Ashok_Resume.pdf";
 
 const Resume = () => {
@@ -172,7 +170,7 @@ const Resume = () => {
       </div>
       <div className=" flex flex-col justify-around">
         {/* This is the section where all the Stat card will appear */}
-      
+
         <a
           href="https://leetcard.jacoblin.cool/adhishthanashok?theme=dark&font=baloo&ext=contest"
           target="_blank"

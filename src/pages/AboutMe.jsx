@@ -1,5 +1,4 @@
-import React from "react";
-import AboutmeCard from "./AboutmeCard";
+import AboutmeCard from "../components/AboutmeCard";
 import "./Home.css";
 
 const AboutMe = () => {

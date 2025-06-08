@@ -3,7 +3,7 @@ import React, { useState } from "react"; import {
     NavLink,
 } from "react-router-dom";
 import header_logo from "../assets/new_logo.png";
-import Theme from "./Theme.jsx";
+import Theme from "../theme/Theme.jsx";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
