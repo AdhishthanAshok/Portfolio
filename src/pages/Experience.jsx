@@ -42,6 +42,10 @@ const Experience = () => {
                 </div>
             </div>
 
+            <h2 className="text-xl mt-8 font-bold transition-colors duration-300  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+                Current Company:
+            </h2>
+
             {/* Details Section for Tecore Labs Internship */}
             <div className="flex flex-col-reverse md:flex-row justify-center gap-6 mt-4 p-2 border-t-2 border-b-2 border-gray-500">
                 {/* Left Card */}
@@ -124,7 +128,9 @@ const Experience = () => {
                 </div>
             </div>
 
-
+            <h2 className="text-xl mt-8 font-bold transition-colors duration-300  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+                Previous Companies:
+            </h2>
             {/* Details Section for Educase India Internship */}
             <div className="flex flex-col md:flex-row justify-center gap-6 mt-8 p-2 border-t-2  border-gray-500 rounded-lg">
                 {/* Left Card */}

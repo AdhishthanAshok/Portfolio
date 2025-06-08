@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { MapPin } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 // Popup Component
 const Popup = ({ message, onClose }) => (
@@ -112,7 +112,7 @@ const ContactMe = () => {
           <div className="flex flex-wrap justify-center gap-10 mb-10 text-center text-gray-800 dark:text-white">
             <LocationItem label="India" url="https://maps.google.com/?q=India" icon={<MapPin className="w-5 h-5 text-blue-500" />} />
             <LocationItem label="Noida, 201301" url="https://maps.google.com/?q=Sector 22, Noida, 201301" icon={<MapPin className="w-5 h-5 text-blue-500" />} />
-            <LocationItem label="+91 9068287133" url="https://wa.me/919068287133" />
+            <LocationItem label="+91 9068287133" url="https://wa.me/919068287133" icon={<Phone className="w-5 h-5 text-blue-500" />} />
           </div>
 
           {/* Form */}

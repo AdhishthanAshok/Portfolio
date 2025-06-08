@@ -22,7 +22,7 @@ const Resume = () => {
       <button
         onClick={handleDownload}
         disabled={loading}
-        className={`relative flex items-center justify-center bg-black dark:bg-gray-100 dark:text-black text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-300
+        className={`relative flex items-center justify-center bg-blue-500 dark:bg-blue-500 dark:text-black text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-300
         ${loading ? "opacity-80 cursor-wait" : "hover:px-5 hover:py-2 hover:bg-gray-800"}`}
       >
         {loading ? (
