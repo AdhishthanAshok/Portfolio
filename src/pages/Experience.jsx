@@ -2,17 +2,22 @@ import React from "react";
 
 const Experience = () => {
     return (
-        <div className="h-auto bg-gradient-to-r text-center bg-gray-100 dark:bg-gray-900 px-4 py-8">
+        <div className="h-auto bg-gradient-to-r text-center bg-gray-100 dark:bg-gray-900 px-4 pb-8">
             {/* Heading */}
-            <h2 className="text-2xl font-bold bg-gray-100 text-black pb-8 text-center dark:text-white dark:bg-gray-900 transition-colors duration-300">
-                <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    Companies I worked for:
-                </span>
+            <h2 className="text-4xl pb-8 font-bold transition-colors duration-300  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
+                Companies I worked for:
             </h2>
 
             {/* Companies Section */}
             <div className="flex flex-col md:flex-row items-center justify-evenly ">
                 <div className="flex flex-wrap justify-center items-center gap-8 ">
+                    <a href="https://tecorelabs.com/" target="_blank" rel="noopener noreferrer">
+                        <img
+                            className="h-auto w-32 md:w-36 rounded-lg hover:scale-110 transition-transform duration-300"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgX-LZ6rHTTyai09vGPP_iK0CvE2Mohet1g&s"
+                            alt="TecoreLabs"
+                        />
+                    </a>
                     <a href="https://educase.io/" target="_blank" rel="noopener noreferrer">
                         <img
                             className="h-auto w-32 md:w-36 rounded-lg hover:scale-110 transition-transform duration-300"
@@ -95,7 +100,7 @@ const Experience = () => {
                 </div>
             </div>
 
-            {/* Details Section for FirnessBell India Internship */}
+            {/* Details Section for FitnessBell India Internship */}
             <div className="flex flex-col-reverse md:flex-row justify-center gap-6 mt-4 p-2 border-t-2 border-b-2 border-gray-500">
                 {/* Left Card */}
                 <div className="text-gray-900 dark:text-white rounded-lg p-4 w-full md:w-1/2">

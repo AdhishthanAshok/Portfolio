@@ -40,21 +40,12 @@ const Footer = () => {
             className="hover:scale-125 transition-all duration-100"
           />
         </a>
-        <a href="https://www.codechef.com/users/adhishthan123" target="_blank">
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/plasticine/100/codechef.png"
-            alt="codechef"
-            className="hover:scale-125 transition-all duration-100"
-          />
-        </a>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
           <img
             width="32"
             height="32"
             src="https://img.icons8.com/color/48/whatsapp--v1.png"
-            alt="codechef"
+            alt="whatsapp"
             className="hover:scale-125 transition-all duration-100"
           />
         </a>

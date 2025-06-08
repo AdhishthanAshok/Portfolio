@@ -2,9 +2,12 @@ import { useState, React } from "react";
 import Typewriter from "typewriter-effect";
 import RegularActivities from "../components/Home/RegularActivities";
 import "./Home.css";
-import TechStack from "../components/Home/TechStack";
 import RecentActivities from "../components/Home/RecentActivities";
 import profile_pic from "../assets/New_Profile_Pic.png";
+import {
+  Link,
+} from "react-router-dom";
+import Resume from "../components/Home/Resume";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);  // State to track image load
@@ -31,8 +34,9 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Full Stack Web Developement",
-                    "Open Source Contribution",
+                    "Full Stack Developement",
+                    "Open Source",
+                    "Programming",
                   ],
                   autoStart: true,
                   loop: true,
@@ -40,6 +44,7 @@ const Home = () => {
                 }}
               />
             </h1>
+
           </div>
           <div className="flex-1 flex items-center justify-center">
             <img
@@ -55,8 +60,14 @@ const Home = () => {
           </div>
         </div>
 
+        <Resume />
 
-        <TechStack />
+        <Link to="/skills" >
+          <button
+            className=" mt-8 relative flex items-center justify-center bg-green-400 dark:text-black text-black font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-300">
+            Know my Tech Stack
+          </button>
+        </Link>
 
         <RecentActivities />
 

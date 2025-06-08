@@ -77,14 +77,13 @@ const ContactMe = () => {
 
       {/* Social Icons */}
       <div className="flex flex-wrap justify-center gap-6 mb-10">
-        <div className="flex items-center text-2xl font-bold bg-gray-100 text-black text-center  dark:text-white dark:bg-gray-900 transition-colors duration-300">
+        <h2 className="block items-center text-2xl md:text-3xl pb-8 font-bold transition-colors duration-300  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
           Social Links :
-        </div>
+        </h2>
         {[
           { href: "https://github.com/AdhishthanAshok", icon: "https://img.icons8.com/color/48/github--v1.png", alt: "GitHub" },
           { href: "https://www.linkedin.com/in/adhishthanashok/", icon: "https://img.icons8.com/color/48/linkedin.png", alt: "LinkedIn" },
           { href: "https://leetcode.com/u/adhishthanashok/", icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png", alt: "LeetCode" },
-          { href: "https://www.codechef.com/users/adhishthan123", icon: "https://img.icons8.com/plasticine/100/codechef.png", alt: "CodeChef" },
           { href: whatsappUrl, icon: "https://img.icons8.com/color/48/whatsapp--v1.png", alt: "WhatsApp" }
         ].map(({ href, icon, alt }) => (
           <a key={alt} href={href} target="_blank" rel="noopener noreferrer">
