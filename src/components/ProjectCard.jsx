@@ -12,7 +12,7 @@ const ProjectCard = ({ img, title, skills, live_link, code_link }) => {
           Made with : <span className="font-semibold"> {skills} </span>
         </p>
         <div className="flex justify-between ">
-          <a
+          {live_link ? <a
             href={live_link}
             className="hover:scale-105 transition-all duration-100 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-700  dark:text-black dark:bg-gray-100 dark:hover:bg-gray-300"
             target="_blank"
@@ -33,7 +33,7 @@ const ProjectCard = ({ img, title, skills, live_link, code_link }) => {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
+          </a> : <></>}
           <a
             href={code_link}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-800  rounded-lg hover:underline  dark:text-white"

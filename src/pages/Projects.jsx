@@ -15,10 +15,7 @@ const Projects = () => {
       <div className="mx-10 dark:text-gray-50">
         <p className="pb-4">
           <span className="font-bold font-3xl">Currently Learning : </span>{" "}
-          <span className="text-blue-500 font-bold">Python</span>{" "}
-          <span className="text-gray-500">
-            (Working on Interesting Projects)
-          </span>
+          <span className="text-blue-600 dark:text-green-600 font-bold">AI Agents and Agentic AI in Python</span>{" "}
         </p>
         <h1 className="font-bold inline-block mr-4">
           Previously made projects{" "}
@@ -32,6 +29,12 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 justify-items-center">
+        <ProjectCard
+          img="/PROJ6.png"
+          title="Decentralized File Sharing System"
+          skills="Ether.js, Hardhat, Solidity, IPFS, React.js, TailwindCSS, Node.js, Express.js, Pinata"
+          code_link="https://github.com/AdhishthanAshok/Blockchain_Based_Secure_File_Sharing_System"
+        />
         <ProjectCard
           img="/PROJ5.png"
           title="Vroom : Calling and Meeting App"

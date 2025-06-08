@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { MapPin } from "lucide-react";
 
 // Popup Component
 const Popup = ({ message, onClose }) => (
@@ -37,9 +38,15 @@ const InputField = ({ name, label, placeholder, type = "text", icon, required })
   </div>
 );
 
-// Location Item Component
-const LocationItem = ({ label, url }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+// LocationItem.jsx
+const LocationItem = ({ label, url, icon }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-1 hover:underline"
+  >
+    {icon && <span className="text-lg">{icon}</span>}
     {label}
   </a>
 );
@@ -103,8 +110,8 @@ const ContactMe = () => {
         <div className="bg-white dark:bg-gray-800 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg p-8 md:p-12">
           {/* Contact Info */}
           <div className="flex flex-wrap justify-center gap-10 mb-10 text-center text-gray-800 dark:text-white">
-            <LocationItem label="India" url="https://maps.google.com/?q=India" />
-            <LocationItem label="Noida, 201301" url="https://maps.google.com/?q=Sector 22, Noida, 201301" />
+            <LocationItem label="India" url="https://maps.google.com/?q=India" icon={<MapPin className="w-5 h-5 text-blue-500" />} />
+            <LocationItem label="Noida, 201301" url="https://maps.google.com/?q=Sector 22, Noida, 201301" icon={<MapPin className="w-5 h-5 text-blue-500" />} />
             <LocationItem label="+91 9068287133" url="https://wa.me/919068287133" />
           </div>
 
