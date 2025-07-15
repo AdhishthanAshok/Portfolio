@@ -64,7 +64,7 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
                     JSS Academy
                   </span>
-                  &nbsp;of Technical Education, Noida in 2021
+                  &nbsp;of Technical Education, Noida in November 2021
                 </>
               }
               position="right"
@@ -78,8 +78,10 @@ const AboutMe = () => {
                   </span>
                   in 2021 and started learning&nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    DSA&nbsp;
+                    DSA &nbsp;
                   </span>
+                  <br />
+                  ( 2022 )
                 </>
               }
               position="left"
@@ -96,6 +98,7 @@ const AboutMe = () => {
                     C#&nbsp;
                   </span>
                   Made my First Game
+                  <br /> ( 2022 )
                 </>
               }
               position="right"
@@ -107,7 +110,8 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Javascript&nbsp;
                   </span>
-                  and learned about Web Development
+                  and learned about Web Development <br />
+                  ( 2023 )
                 </>
               }
               position="left"
@@ -119,7 +123,8 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     CodeClause and Fitness Bell India&nbsp;
                   </span>
-                  and learned about Web Designing
+                  and learned about Web Designing <br />
+                  ( June 2024 )
                 </>
               }
               position="right"
@@ -135,7 +140,8 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Educase India&nbsp;
                   </span>
-                  and learnt about NodeJs, Javascript, SQL
+                  and learnt about NodeJs, Javascript, SQL <br />
+                  ( Sep 2024 )
                 </>
               }
               position="left"
@@ -145,8 +151,9 @@ const AboutMe = () => {
                 <>
                   Review Paper Accepted in
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    &nbsp;IEEE Xplore at OTCON 4.0
+                    &nbsp; IEEE Xplore at OTCON 4.0 <br />
                   </span>
+                  ( April 2025 )
                 </>
               }
               position="right"
@@ -158,9 +165,22 @@ const AboutMe = () => {
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Junior Full Stack Engineer &nbsp;
                   </span>
+                  ( April 2025 )
                 </>
               }
               position="left"
+            />
+            <AboutmeCard
+              details={
+                <>
+                  Promoted to &nbsp;
+                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
+                    Software Engineer
+                  </span>
+                  &nbsp; at TecoreLabs. <br /> ( July 2025 )
+                </>
+              }
+              position="right"
             />
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
