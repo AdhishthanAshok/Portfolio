@@ -1,5 +1,5 @@
 import AboutmeCard from "../components/AboutmeCard";
-import "./Home.css";
+import "../Styles/Home.css";
 
 const AboutMe = () => {
   return (

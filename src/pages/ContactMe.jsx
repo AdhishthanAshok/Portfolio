@@ -51,9 +51,36 @@ const LocationItem = ({ label, url, icon }) => (
   </a>
 );
 
+const Spinner = () => (
+  <svg
+    className="animate-spin h-4 w-4 mr-2 text-white inline-block"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      className="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      strokeWidth="4"
+    ></circle>
+    <path
+      className="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+    ></path>
+  </svg>
+);
+
+
 const ContactMe = () => {
   const form = useRef();
   const [popupMessage, setPopupMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [resetText, setResetText] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -65,10 +92,22 @@ const ContactMe = () => {
         form.current,
         import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => setPopupMessage("Message sent successfully!"),
-        (error) => setPopupMessage(`Failed to send message: ${error.text}`)
-      );
+      .then(() => {
+        setPopupMessage("Message sent successfully!");
+        setIsSent(true);
+        setResetText(false);
+
+        setTimeout(() => {
+          setIsSent(false);
+          setResetText(true);
+        }, 5000);
+      })
+      .catch((error) => {
+        setPopupMessage(`Failed to send message: ${error.text}`);
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   const closePopup = () => setPopupMessage("");
@@ -118,14 +157,14 @@ const ContactMe = () => {
           {/* Form */}
           <form ref={form} onSubmit={sendEmail} className="max-w-3xl mx-auto space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <InputField name="user_name" label="First Name" placeholder="Bill" required />
-              <InputField name="user_lastname" label="Last Name" placeholder="Gates" required />
+              <InputField name="user_name" label="First Name" placeholder="Eren" required />
+              <InputField name="user_lastname" label="Last Name" placeholder="D. Luffy" required />
             </div>
 
             <InputField
               name="user_email"
               label="Your Email"
-              placeholder="xyz@gmail.com"
+              placeholder="you_know_who@say_my_name.com"
               type="email"
               required
               icon={
@@ -143,17 +182,33 @@ const ContactMe = () => {
               <textarea
                 name="message"
                 rows="4"
-                placeholder="Write your thoughts here..."
+                placeholder="Totem spinning or not, your thoughts are real. Write them down...."
                 className="w-full p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-sm text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               ></textarea>
             </div>
-
             <div className="text-center">
-              <input
+              <button
                 type="submit"
-                value="Send"
-                className="px-6 py-2 text-sm font-medium border rounded-lg text-gray-800 hover:bg-gray-800 hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-colors"
-              />
+                disabled={isSending}
+                className={`
+                  flex items-center justify-center gap-2 mx-auto px-6 py-2 text-sm font-medium border rounded-lg transition-all duration-500 ease-in-out
+                  ${isSent
+                    ? "bg-green-500 border-green-600 text-white hover:bg-green-600"
+                    : isSending
+                      ? "bg-gray-400 text-white border-gray-500 cursor-not-allowed"
+                      : "text-gray-800 border-gray-600 hover:bg-gray-800 hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
+                  }`
+                }
+              >
+                {isSending && <Spinner />}
+                {isSending
+                  ? "Sending..."
+                  : isSent
+                    ? "Sent ✓"
+                    : resetText
+                      ? "Send Again!"
+                      : "Send"}
+              </button>
             </div>
           </form>
         </div>

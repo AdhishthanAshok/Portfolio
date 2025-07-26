@@ -1,7 +1,7 @@
 import { useState, React } from "react";
 import Typewriter from "typewriter-effect";
 import RegularActivities from "../components/Home/RegularActivities";
-import "./Home.css";
+import "../Styles/Home.css";
 import RecentActivities from "../components/Home/RecentActivities";
 import profile_pic from "../assets/New_Profile_Pic.png";
 import {

@@ -1,6 +1,6 @@
 import React from "react";
 import BuyMeACoffeeButton from "./BuyMeACoffeeButton";
-import "../pages/Home.css";
+import "../Styles/Home.css";
 import JokeOfTheDay from "./JokeOfTheDay";
 
 const Footer = () => {
