@@ -134,14 +134,14 @@ const AboutMe = () => {
                 <>
                   Worked for&nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    2 Months &nbsp;
+                    6 Months &nbsp;
                   </span>
                   as Backend Developer Intern at&nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
                     Educase India&nbsp;
                   </span>
                   and learnt about NodeJs, Javascript, SQL <br />
-                  ( Sep 2024 )
+                  ( Sep 2024 - Mar 2025 )
                 </>
               }
               position="left"
