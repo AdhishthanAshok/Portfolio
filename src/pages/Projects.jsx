@@ -31,8 +31,9 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 justify-items-center">
         <ProjectCard
           img="/PROJ6.png"
-          title="Decentralized File Sharing System"
+          title="Decentralized File Sharing System (Review Paper - IEEE Xplore)"
           skills="Ether.js, Hardhat, Solidity, IPFS, React.js, TailwindCSS, Node.js, Express.js, Pinata"
+          live_link="https://ieeexplore.ieee.org/document/11070915"
           code_link="https://github.com/AdhishthanAshok/Blockchain_Based_Secure_File_Sharing_System"
         />
         <ProjectCard
