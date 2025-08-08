@@ -1,5 +1,4 @@
 import { useState } from "react";
-import resume from "../../assets/Adhishthan_Ashok_Resume.pdf";
 
 const Resume = () => {
   const [loading, setLoading] = useState(false);
@@ -11,7 +10,8 @@ const Resume = () => {
     setTimeout(() => {
       setLoading(false);
       const link = document.createElement("a");
-      link.href = resume;
+      link.href =
+        "https://drive.google.com/uc?export=download&id=1TJYRqpklylvsuWxOjhL55KJ69vk77qmx";
       link.download = "Adhishthan_Ashok_Resume.pdf";
       link.click();
     }, 2000);
