@@ -15,7 +15,8 @@ const Projects = () => {
       <div className="mx-10 dark:text-gray-50">
         <p className="pb-4">
           <span className="font-bold font-3xl">Currently Learning : </span>{" "}
-          <span className="text-blue-600 dark:text-green-600 font-bold">AI Agents and Agentic AI in Python</span>{" "}
+          <span className="text-blue-600 dark:text-green-600 font-bold">AI Agents and Agentic AI in Python -- </span>{" "}
+          <span className="text-green-600 dark:text-blue-600 font-bold underline"><a href="https://drive.google.com/file/d/1Er4xLuFW7sdk1syGWxMwxd0dZDCdGmzw/view" target="_blank">Link</a></span>
         </p>
         <h1 className="font-bold inline-block mr-4">
           Previously made projects{" "}
@@ -30,6 +31,13 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 justify-items-center">
         <ProjectCard
+          img="/PROJ7.png"
+          title="Textract- Precision text extraction through OCR & ICR"
+          skills="Python, OpenCV, Tesseract OCR, PyTorch (ICR), FastAPI/Flask, React, TailwindCSS"
+          live_link="https://textract-ui.vercel.app/"
+          code_link="https://github.com/AdhishthanAshok/TextractUI"
+        />
+        <ProjectCard
           img="/PROJ6.png"
           title="Decentralized File Sharing System (Review Paper - IEEE Xplore)"
           skills="Ether.js, Hardhat, Solidity, IPFS, React.js, TailwindCSS, Node.js, Express.js, Pinata"
@@ -43,7 +51,7 @@ const Projects = () => {
           live_link="https://vroom-calling.vercel.app/"
           code_link="https://github.com/AdhishthanAshok/Vroom-Call"
         />
-        <ProjectCard
+        {/* <ProjectCard
           img="/PROJ1.png"
           title="Glam-Gait: Shoe Site"
           skills={
@@ -63,7 +71,7 @@ const Projects = () => {
           skills=" ReactJs, TailwindCSS , HTML , JavaScript , Api Integration, Postman "
           live_link="https://image-search-app-delta-beige.vercel.app/"
           code_link="https://github.com/AdhishthanAshok/Projects/tree/main/React%20Projects/Image%20Search%20App"
-        />
+        /> */}
         <ProjectCard
           img="/PROJ3.png"
           title="Text-Editor"

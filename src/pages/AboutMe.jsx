@@ -163,7 +163,7 @@ const AboutMe = () => {
                 <>
                   Currently working at TecoreLabs as a &nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Junior Full Stack Engineer &nbsp;
+                    Junior Software Engineer &nbsp;
                   </span>
                   ( April 2025 )
                 </>
