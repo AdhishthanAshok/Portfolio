@@ -1,49 +1,64 @@
 import React from 'react';
+import { ExternalLink, Award, GraduationCap, DollarSign } from 'lucide-react';
+
+const ActivityCard = ({ title, description, links, icon: Icon }) => (
+    <div className="p-6 md:p-8 rounded-3xl bg-white/70 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 backdrop-blur-xl shadow-sm hover:shadow-indigo-500/5 hover:border-indigo-500/50 transition-all duration-300 group">
+        <div className="flex gap-6">
+            <div className="hidden sm:flex h-12 w-12 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Icon size={24} />
+            </div>
+            <div className="flex-1 space-y-3">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-tight">
+                    {title}
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm md:text-base">
+                    {description}
+                </p>
+                <div className="flex flex-wrap gap-4 pt-2">
+                    {links.map((link, i) => (
+                        <a key={i} href={link.url} target="_blank" rel="noreferrer"
+                            className="flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline">
+                            {link.label} <ExternalLink size={14} />
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+);
 
 const RecentActivities = () => {
+    const activities = [
+        {
+            title: "Blockchain Research Publication",
+            description: "Published 'Decentralized File Sharing using Blockchain' at OTCON 4.0; now officially live in IEEE Xplore.",
+            icon: Award,
+            links: [
+                { label: "View Paper", url: "https://ieeexplore.ieee.org/document/11070915" },
+                { label: "View Certificate", url: "https://drive.google.com/file/d/1vOiAuzf1cjIsuejtULYPw86dBrkDcwrr/view" }
+            ]
+        },
+        {
+            title: "Honors Degree Graduation",
+            description: "Graduated with B.Tech Honors in Information Technology, specializing in core computing principles.",
+            icon: GraduationCap,
+            links: [{ label: "View Certificate", url: "https://drive.google.com/file/d/1ul-6Qc254aVrbWeRvkv1y6SIRwJpXUKh/view" }]
+        },
+        {
+            title: "Project Acquisition & Lead Role",
+            description: "Successfully sold 'Vroom Calling' to Course Compass (Ed-Tech Startup). Appointed as Backend Lead for scalability.",
+            icon: DollarSign,
+            links: [{ label: "GitHub Repo", url: "https://github.com/AdhishthanAshok/Vroom" }]
+        }
+    ];
+
     return (
-        <div className="mt-5 bg-gray-100 dark:bg-gray-900 w-11/12 max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
-            <h1 className="text-3xl font-bold text-center py-8 text-gray-900 dark:text-white">
-                My Recent AchieveMents
-            </h1>
-
-            <div className="overflow-x-auto rounded-lg border-2 border-gray-700 dark:border-gray-400">
-                <table className="min-w-full table-auto">
-                    <thead>
-                        <tr>
-                            <th className="py-2 px-4 text-left font-semibold text-indigo-600 border-b-2 border-r-2 border-gray-700 dark:border-gray-400">Details</th>
-                            <th className="py-2 px-4 text-left font-semibold text-indigo-600 dark:text-green-600 border-b-2 border-gray-700 dark:border-gray-400">Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className="border-b-2">
-                            <td className="py-2 px-4 text-gray-900 dark:text-white border-b-2 border-r-2 border-gray-700 dark:border-gray-400">
-                                Published and presented the review paper <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text"> "Decentralized File Sharing using Blockchain" </span> at the 2025 4th OPJU International Technology Conference (OTCON 4.0); <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">officially published in IEEE Xplore</span>.
-                            </td>
-                            <td className="py-2 px-2  border-b-2 border-gray-700 dark:border-gray-400">
-                                <a href="https://ieeexplore.ieee.org/document/11070915" className="text-indigo-600 dark:text-green-600 underline" target="_blank"><b>Link-1</b></a><br /><br />
-                                <a href="https://drive.google.com/file/d/1vOiAuzf1cjIsuejtULYPw86dBrkDcwrr/view" className="text-indigo-600 dark:text-green-600 underline" target="_blank"><b>Link-2</b></a>
-                            </td>
-                        </tr>
-                        <tr className="border-b-2">
-                            <td className="py-2 px-4 text-gray-900 dark:text-white border-b-2 border-r-2 border-gray-700 dark:border-gray-400">
-                                Successfully <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">graduated with an Honors degree in B.Tech Information Technology</span>, demonstrating academic excellence and a strong foundation in computing principles, systems, and applied technologies.
-                            </td>
-                            <td className="py-2 px-4 border-b-2 border-gray-700 dark:border-gray-400">
-                                <a href="https://drive.google.com/file/d/1ul-6Qc254aVrbWeRvkv1y6SIRwJpXUKh/view" className="text-indigo-600 dark:text-green-600 underline" target="_blank"><b>Link</b></a>
-                            </td>
-                        </tr>
-
-                        <tr className="border-b ">
-                            <td className="py-2 px-4 text-gray-900 dark:text-white border-r-2 border-gray-700 dark:border-gray-400">
-                                Successfully sold the <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Vroom Calling project</span> to <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Course Compass</span>, a Mumbai-based <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">Ed-Tech startup</span>. Following the acquisition, I was offered the position of <span className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">backend lead</span> for the app’s ongoing development and scalability.
-                            </td>
-                            <td className="py-2 px-4">
-                                <a href="https://github.com/AdhishthanAshok/Vroom" target="_blank" className="text-indigo-600 dark:text-green-600 underline"><b>Link</b></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div className="flex flex-col justify-center items-center w-full h-auto mt-10">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 text-center md:text-left">
+                Recent <span className="text-indigo-600 dark:text-indigo-400">Achievements</span>
+            </h2>
+            <div className="grid grid-cols-1 gap-6">
+                {activities.map((act, idx) => <ActivityCard key={idx} {...act} />)}
             </div>
         </div>
     );

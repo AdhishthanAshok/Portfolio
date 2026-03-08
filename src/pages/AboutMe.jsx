@@ -1,188 +1,89 @@
-import AboutmeCard from "../components/AboutmeCard";
-import "../Styles/Home.css";
+import React from "react";
+import AboutmeCard from "../components/AboutmeCard.jsx";
+import {
+  Code, Terminal, GraduationCap, Briefcase, Award, Rocket
+} from "lucide-react"; // I recommend using lucide-react for icons
+
+const milestones = [
+  {
+    title: "Introduced to HTML",
+    date: "2016",
+    description: "The spark that started it all. Began exploring the building blocks of the web.",
+    icon: Code,
+    position: "left"
+  },
+  {
+    title: "First Program: Train Reservation",
+    date: "2018",
+    description: "Built a functional reservation form using pure HTML and CSS. My first step into logic and UI.",
+    icon: Terminal,
+    position: "right"
+  },
+  {
+    title: "Academic Excellence",
+    date: "2019 - 2021",
+    description: "Completed 10th and 12th from CBSE Board with over 90% aggregate score.",
+    icon: GraduationCap,
+    position: "left"
+  },
+  {
+    title: "JSS Academy of Technical Education",
+    date: "Nov 2021",
+    description: "Joined JSSATE Noida to pursue professional engineering studies.",
+    icon: Rocket,
+    position: "right"
+  },
+  {
+    title: "DSA & Game Development",
+    date: "2022",
+    description: "Mastered C++ and started Data Structures. Built my first 2D game using Unity and C#.",
+    icon: Code,
+    position: "left"
+  },
+  {
+    title: "IEEE Xplore Publication",
+    date: "April 2025",
+    description: "Review paper accepted and published in IEEE Xplore at OTCON 4.0 conference.",
+    icon: Award,
+    position: "right"
+  },
+  {
+    title: "SDE-1 @ RavenCast Labs",
+    date: "Oct 2025 - Present",
+    description: "Currently working on scalable systems and full-stack solutions.",
+    icon: Briefcase,
+    position: "left"
+  }
+];
 
 const AboutMe = () => {
   return (
-    <div className="h-auto bg-gradient-to-r text-center bg-gray-100 dark:bg-gray-900">
-      <h2 className="text-4xl font-bold bg-gray-100 text-black pb-8 text-center  dark:text-white dark:bg-gray-900 transition-colors duration-300">
-        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-          About Me
-        </span>
-      </h2>
+    <div className="min-h-screen py-20 px-4 relative overflow-hidden transition-colors duration-500
+                    bg-zinc-50 dark:bg-slate-950">
 
-      <div className="h-auto bg-blue-500 dark:bg-blue-700 py-6 flex flex-col justify-center sm:py-12">
-        <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
-          <div className="relative text-gray-700 antialiased text-sm font-semibold">
-            {/* <!-- Vertical bar running through middle --> */}
-            <div className="hidden sm:block w-1 bg-blue-300 dark:bg-blue-900 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+      {/* Decorative Background Glows (Subtle in light, vibrant in dark) */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/5 dark:bg-indigo-600/10 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 dark:bg-purple-600/10 rounded-full blur-[120px]" />
 
-            <AboutmeCard
-              details={
-                <>
-                  {" "}
-                  Introduced to HTML in{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    2016
-                  </span>
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Write my first program in{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    HTML/CSS
-                  </span>
-                  {<br />}
-                  (A Train Reservation Form)
-                </>
-              }
-              position="right"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Completed my class,{<br />}{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    10th in 2019 , 12th in 2021
-                  </span>
-                  {<br />}
-                  from CBSE Board
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    &nbsp;with above 90%
-                  </span>
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Joined{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animated-gradient-text">
-                    JSS Academy
-                  </span>
-                  &nbsp;of Technical Education, Noida in November 2021
-                </>
-              }
-              position="right"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Learned{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    C++&nbsp;
-                  </span>
-                  in 2021 and started learning&nbsp;
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    DSA &nbsp;
-                  </span>
-                  <br />
-                  ( 2022 )
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Started{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Game Dev&nbsp;
-                  </span>
-                  using Unity in&nbsp;
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    C#&nbsp;
-                  </span>
-                  Made my First Game
-                  <br /> ( 2022 )
-                </>
-              }
-              position="right"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Started Working on{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Javascript&nbsp;
-                  </span>
-                  and learned about Web Development <br />
-                  ( 2023 )
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Got internships at{" "}
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    CodeClause and Fitness Bell India&nbsp;
-                  </span>
-                  and learned about Web Designing <br />
-                  ( June 2024 )
-                </>
-              }
-              position="right"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Worked for&nbsp;
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    6 Months &nbsp;
-                  </span>
-                  as Backend Developer Intern at&nbsp;
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Educase India&nbsp;
-                  </span>
-                  and learnt about NodeJs, Javascript, SQL <br />
-                  ( Sep 2024 - Mar 2025 )
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  Review Paper Accepted in
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    &nbsp; IEEE Xplore at OTCON 4.0 <br />
-                  </span>
-                  ( April 2025 )
-                </>
-              }
-              position="right"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Software Engineer &nbsp;
-                  </span>
-                  at TecoreLabs <br />
-                  ( April to September 2025 )
-                </>
-              }
-              position="left"
-            />
-            <AboutmeCard
-              details={
-                <>
-                  <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    SDE-1
-                  </span>
-                  &nbsp; at RavenCast Labs <br /> ( October 2025 )
-                </>
-              }
-              position="right"
-            />
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl font-extrabold mb-4 text-slate-900 dark:text-white">
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
+              Journey
+            </span>
+          </h2>
+          <div className="h-1.5 w-24 bg-indigo-500 mx-auto rounded-full shadow-sm" />
+        </div>
 
-            {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
+        <div className="relative">
+          {/* Adaptive Central Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full 
+                          bg-gradient-to-b from-transparent via-slate-800 dark:via-indigo-500/50 to-transparent" />
+
+          <div className="space-y-4">
+            {milestones.map((item, index) => (
+              <AboutmeCard key={index} {...item} />
+            ))}
           </div>
         </div>
       </div>

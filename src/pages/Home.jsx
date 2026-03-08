@@ -17,7 +17,9 @@ const Home = () => {
   };
   return (
     <div className="smooth-scroll flex flex-col items-center bg-gray-100 dark:bg-gray-900 h-auto">
-      <p className="italic text-lg md:text-lg font-bold text-green-600 dark:text-green-600">{"<!-- An Engineer, not a Frameworker -->"}</p>
+      <p className="inline-block px-3 py-1 text-[10px] md:text-sm font-semibold rounded-full bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20">
+        {"<!-- An Engineer, not a Frameworker -->"}
+      </p>
       <div className="px-0 mx-0 h-auto flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl py-4">
           <div className="flex-1 text-center md:text-left mb-8 md:mb-0">

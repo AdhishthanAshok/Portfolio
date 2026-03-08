@@ -3,9 +3,9 @@ import React from 'react';
 const RegularActivities = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-auto">
-            <h1 className="text-3xl font-bold text-center py-8 dark:text-white">
-                My Regular Activities
-            </h1>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mt-10 mb-10 text-center md:text-left">
+                Daily <span className="text-indigo-600 dark:text-indigo-400">Metrics</span>
+            </h2>
             <div className="w-full max-w-md h-auto md:max-w-4xl flex flex-col justify-around">
                 <a href="https://leetcode.com/u/adhishthanashok" target="_blank">
                     <img
