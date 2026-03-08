@@ -161,11 +161,11 @@ const AboutMe = () => {
             <AboutmeCard
               details={
                 <>
-                  Currently working at TecoreLabs as a &nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Junior Software Engineer &nbsp;
+                    Software Engineer &nbsp;
                   </span>
-                  ( April 2025 )
+                  at TecoreLabs <br />
+                  ( April to September 2025 )
                 </>
               }
               position="left"
@@ -173,11 +173,10 @@ const AboutMe = () => {
             <AboutmeCard
               details={
                 <>
-                  Promoted to &nbsp;
                   <span className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text animated-gradient-text">
-                    Software Engineer
+                    SDE-1
                   </span>
-                  &nbsp; at TecoreLabs. <br /> ( July 2025 )
+                  &nbsp; at RavenCast Labs <br /> ( October 2025 )
                 </>
               }
               position="right"

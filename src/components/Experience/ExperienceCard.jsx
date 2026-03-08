@@ -6,12 +6,22 @@ const ExperienceCard = ({
     certificateUrl,
     workDetails,
     isImageLeft = false,
+    companyUrl
 }) => {
     const TextContent = () => (
         <div className="w-full md:w-1/2 px-6 py-8">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
-                My Work at <span className="text-indigo-600 dark:text-indigo-400 underline">{companyName}</span>
+                My Work at{" "}
+                <a
+                    href={companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 dark:text-indigo-400 underline hover:opacity-80"
+                >
+                    {companyName}
+                </a>
             </h3>
+
             <div className="space-y-5 text-gray-700 dark:text-gray-200 text-[17px] leading-relaxed">
                 {workDetails.map((detail, index) => (
                     <div key={index} dangerouslySetInnerHTML={{ __html: detail }} />
