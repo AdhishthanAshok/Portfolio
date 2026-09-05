@@ -22,37 +22,44 @@ const milestones = [
   {
     title: "Academic Excellence",
     date: "2019 - 2021",
-    description: "Completed 10th and 12th from CBSE Board with over 90% aggregate score.",
+    description: "Completed 10th and 12th from Modern Public School (CBSE) with over 92% aggregate score.",
     icon: GraduationCap,
     position: "left"
   },
   {
-    title: "JSS Academy of Technical Education",
-    date: "Nov 2021",
-    description: "Joined JSSATE Noida to pursue professional engineering studies.",
+    title: "B.Tech at JSSATE Noida",
+    date: "2021 - 2025",
+    description: "Pursued B.Tech in Information Technology, graduating with Honors and an 8.4 CGPA.",
     icon: Rocket,
     position: "right"
   },
   {
-    title: "DSA & Game Development",
-    date: "2022",
-    description: "Mastered C++ and started Data Structures. Built my first 2D game using Unity and C#.",
+    title: "DSA Mastery & Problem Solving",
+    date: "2022 - Present",
+    description: "Mastered C++ and Data Structures & Algorithms. Solved 800+ problems and achieved a LeetCode rating of 1719.",
     icon: Code,
     position: "left"
   },
   {
     title: "IEEE Xplore Publication",
-    date: "April 2025",
-    description: "Review paper accepted and published in IEEE Xplore at OTCON 4.0 conference.",
+    date: "2025",
+    description: "Published research paper 'Decentralized File Sharing using Blockchain' at IEEE OTCON 4.0 conference.",
     icon: Award,
     position: "right"
   },
   {
-    title: "SDE-1 @ RavenCast Labs",
-    date: "Oct 2025 - Present",
-    description: "Currently working on scalable systems and full-stack solutions.",
+    title: "Software Engineer @ TecoreLabs",
+    date: "Apr 2025 - Sep 2025",
+    description: "Designed a microservices-based AI analytics platform and developed compliance automation tools using Node.js and Python.",
     icon: Briefcase,
     position: "left"
+  },
+  {
+    title: "Software Engineer @ RavenCast Labs",
+    date: "Oct 2025 - Present",
+    description: "Architecting LLM-powered agents and engineering high-frequency AWS S3-based data pipelines for real-time market analytics.",
+    icon: Briefcase,
+    position: "right"
   }
 ];
 

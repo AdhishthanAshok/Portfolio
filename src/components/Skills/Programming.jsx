@@ -5,11 +5,12 @@ const Programming = () => {
                 Programming Skills:
             </h1>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20 pb-10">
+                {/* Python */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110 "
-                        src="https://img.icons8.com/?size=100&id=40669&format=png"
-                        alt="Skill 1"
+                        src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+                        alt="Python"
                         data-tooltip-target="tooltip-skill-1"
                     />
                     <div
@@ -17,16 +18,17 @@ const Programming = () => {
                         role="tooltip"
                         className="tooltip-content"
                     >
-                        C/C++
+                        Python
                         <div className="tooltip-arrow"></div>
                     </div>
                 </div>
 
+                {/* JavaScript */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110 "
                         src="http://img.icons8.com/?size=100&id=108784&format=png&color=000000"
-                        alt="Skill 2"
+                        alt="JavaScript"
                         data-tooltip-target="tooltip-skill-2"
                     />
                     <div
@@ -39,11 +41,12 @@ const Programming = () => {
                     </div>
                 </div>
 
+                {/* TypeScript */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110 "
                         src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000"
-                        alt="Skill 3"
+                        alt="TypeScript"
                         data-tooltip-target="tooltip-skill-3"
                     />
                     <div
@@ -56,11 +59,12 @@ const Programming = () => {
                     </div>
                 </div>
 
+                {/* C/C++ */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110 "
-                        src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
-                        alt="Skill 4"
+                        src="https://img.icons8.com/?size=100&id=40669&format=png"
+                        alt="C/C++"
                         data-tooltip-target="tooltip-skill-4"
                     />
                     <div
@@ -68,7 +72,25 @@ const Programming = () => {
                         role="tooltip"
                         className="tooltip-content"
                     >
-                        Python
+                        C/C++
+                        <div className="tooltip-arrow"></div>
+                    </div>
+                </div>
+
+                {/* SQL */}
+                <div className="relative group">
+                    <img
+                        className="h-auto w-16 rounded-lg hover:scale-110 "
+                        src="https://img.icons8.com/?size=100&id=QSjnrUKYMnxO&format=png&color=000000"
+                        alt="SQL"
+                        data-tooltip-target="tooltip-skill-5"
+                    />
+                    <div
+                        id="tooltip-skill-5"
+                        role="tooltip"
+                        className="tooltip-content"
+                    >
+                        SQL
                         <div className="tooltip-arrow"></div>
                     </div>
                 </div>

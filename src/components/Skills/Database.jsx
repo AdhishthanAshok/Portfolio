@@ -6,16 +6,16 @@ const Database = () => {
             </h1>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20 pb-10">
 
-                {/* SQL */}
+                {/* PostgreSQL */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110"
-                        src="https://img.icons8.com/?size=100&id=QSjnrUKYMnxO&format=png&color=000000"
-                        alt="SQL"
-                        data-tooltip-target="tooltip-database-1"
+                        src="https://img.icons8.com/?size=100&id=38561&format=png"
+                        alt="PostgreSQL"
+                        data-tooltip-target="tooltip-database-3"
                     />
-                    <div id="tooltip-database-1" role="tooltip" className="tooltip-content">
-                        SQL
+                    <div id="tooltip-database-3" role="tooltip" className="tooltip-content">
+                        PostgreSQL
                         <div className="tooltip-arrow"></div>
                     </div>
                 </div>
@@ -34,19 +34,6 @@ const Database = () => {
                     </div>
                 </div>
 
-                {/* PostgreSQL */}
-                <div className="relative group">
-                    <img
-                        className="h-auto w-16 rounded-lg hover:scale-110"
-                        src="https://img.icons8.com/?size=100&id=38561&format=png"
-                        alt="PostgreSQL"
-                        data-tooltip-target="tooltip-database-3"
-                    />
-                    <div id="tooltip-database-3" role="tooltip" className="tooltip-content">
-                        PostgreSQL
-                        <div className="tooltip-arrow"></div>
-                    </div>
-                </div>
 
                 {/* MongoDB */}
                 <div className="relative group">

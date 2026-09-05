@@ -4,8 +4,30 @@ const CourseWork = () => {
             <h1 className="text-2xl font-bold text-left italic py-8 text-gray-900 dark:text-white">
                 Course Work:
             </h1>
-            {/* Database Management Systems */}
+
+
+
             <div className="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-20 pb-10">
+
+                {/* Data Structures & Algorithms */}
+                <div className="relative group">
+                    <img
+                        className="h-auto w-16 rounded-lg hover:scale-110 bg-white p-1"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVsLQitgJEJtY4Do00X8TNoUyQ5lPg3eh2xXyrPEVqwbWe7XwqI7zcByc&s=10"
+                        alt="Data Structures & Algorithms"
+                        data-tooltip-target="tooltip-coursework-1"
+                    />
+                    <div
+                        id="tooltip-coursework-1"
+                        role="tooltip"
+                        className="tooltip-content"
+                    >
+                        Data Structures & Algorithms
+                        <div className="tooltip-arrow"></div>
+                    </div>
+                </div>
+
+                {/* Database Management Systems */}
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110 "
@@ -27,7 +49,7 @@ const CourseWork = () => {
                 <div className="relative group">
                     <img
                         className="h-auto w-16 rounded-lg hover:scale-110"
-                        src="https://img.myloview.com/stickers/object-oriented-programming-icon-vector-700-153232805.jpg"
+                        src="https://static.vecteezy.com/system/resources/previews/026/330/873/non_2x/oop-icon-vector.jpg"
                         alt="Object Oriented Programming"
                         data-tooltip-target="tooltip-coursework-2"
                     />

@@ -68,20 +68,20 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/skills"
-                                activeclassname="bg-blue-700 text-white"
-                                className="border-b-2 border-b-gray-800 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                            >
-                                Skills
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
                                 to="/experience"
                                 activeclassname="bg-blue-700 text-white"
                                 className="border-b-2 border-b-gray-800 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Experience
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/skills"
+                                activeclassname="bg-blue-700 text-white"
+                                className="border-b-2 border-b-gray-800 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                            >
+                                Skills
                             </NavLink>
                         </li>
                         <li>

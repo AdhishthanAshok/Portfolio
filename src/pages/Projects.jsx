@@ -15,8 +15,8 @@ const Projects = () => {
       <div className="mx-10 dark:text-gray-50">
         <p className="pb-4">
           <span className="font-bold font-3xl">Currently Learning : </span>{" "}
-          <span className="text-blue-600 dark:text-green-600 font-bold">AI Agents and Agentic AI in Python -- </span>{" "}
-          <span className="text-green-600 dark:text-blue-600 font-bold underline"><a href="https://drive.google.com/file/d/1Er4xLuFW7sdk1syGWxMwxd0dZDCdGmzw/view" target="_blank">Link</a></span>
+          <span className="text-blue-600 dark:text-green-600 font-bold">Machine Learning Specialization - DeepLearning.AI & Stanford Online -- </span>{" "}
+          <span className="text-green-600 dark:text-blue-600 font-bold underline"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank">Link</a></span>
         </p>
         <h1 className="font-bold inline-block mr-4">
           Previously made projects{" "}
@@ -30,6 +30,13 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 justify-items-center">
+        <ProjectCard
+          img="/PROJ8.png"
+          title="AdaptiveLearn: A short-video based adaptive learning platform"
+          skills="Python, FastAPI, LLMs, PostgreSQL, Next.js, React"
+          live_link="/"
+          code_link="https://github.com/AdhishthanAshok/AdaptiveLearn"
+        />
         <ProjectCard
           img="/PROJ7.png"
           title="Textract- Precision text extraction through OCR & ICR"

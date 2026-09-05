@@ -36,9 +36,10 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Full Stack Developement",
-                    "Open Source",
-                    "Programming",
+                    "Backend Systems",
+                    "AI & LLM Applications",
+                    "Scalable APIs & Microservices",
+                    "Real-Time Data Pipelines",
                   ],
                   autoStart: true,
                   loop: true,
